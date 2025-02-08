@@ -1,0 +1,3 @@
+- [ ] Add distance to places information with openroute
+- [ ] Add schools
+- [ ] Add ofices
