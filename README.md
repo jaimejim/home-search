@@ -11,19 +11,10 @@ A Python script that scrapes real estate listings from Oikotie.fi, saves data to
 ## Usage
 
 ```sh
-poetry run python property_scraper.py \
-https://asunnot.oikotie.fi/myytavat-asunnot/espoo/22100228 \
---csv properties.csv --map index.html
+poetry run python property_scraper.py urls.txt
 ```
 
 Output
 
 - properties.csv → Property data.
 - index.html → Interactive map.
-
-
-
-poetry run python property-scrapper.py \
-https://asunnot.oikotie.fi/myytavat-asunnot/espoo/22100228 \
-https://asunnot.oikotie.fi/myytavat-asunnot/vantaa/22490946 \
---csv properties.csv --map property_map.html

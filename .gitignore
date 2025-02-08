@@ -20,9 +20,6 @@ dist/
 # Environment variables (keep secrets out of Git)
 .env
 
-# Generated files (if you prefer not to commit these)
-properties.csv
-property_map.html
 
 # IDE / Editor files
 .vscode/
