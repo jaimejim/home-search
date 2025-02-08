@@ -1,3 +1,6 @@
+- [x] Show vastikes
+- [x] Show csv
+- [ ] Use excel instead of csv and format it
 - [ ] Add distance to places information with openroute
 - [ ] Add schools
 - [ ] Add ofices
