@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "casa-scrapper"
+version = "0.1.0"
+description = ""
+authors = ["Jaime Jimenez <jaimejim@gmail.com>"]
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.13"
+selenium = "^4.28.1"
+beautifulsoup4 = "^4.13.3"
+openai = "^1.61.1"
+python-dotenv = "^1.0.1"
+bs4 = "^0.0.2"
+requests = "^2.32.3"
+pandas = "^2.2.3"
+click = "^8.1.8"
+folium = "^0.19.4"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

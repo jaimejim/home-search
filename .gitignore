@@ -1,0 +1,32 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments (adjust if using in-project venv)
+.venv/
+venv/
+ENV/
+env/
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+
+# MacOS specific files
+.DS_Store
+
+# Environment variables (keep secrets out of Git)
+.env
+
+# Generated files (if you prefer not to commit these)
+properties.csv
+property_map.html
+
+# IDE / Editor files
+.vscode/
+.idea/
+
+# Log files
+*.log
