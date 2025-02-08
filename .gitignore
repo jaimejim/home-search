@@ -13,6 +13,7 @@ env/
 build/
 dist/
 *.egg-info/
+poetry.lock
 
 # MacOS specific files
 .DS_Store
@@ -27,3 +28,6 @@ dist/
 
 # Log files
 *.log
+debug.html
+urls.txt
+

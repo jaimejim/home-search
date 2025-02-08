@@ -1,3 +1,23 @@
-Address,City,Neighborhood,Postal Code,Latitude,Longitude,Price (€),Size (m²),Condition,Bedrooms,Description,URL
-"Monsaksenkuja 9, 01620, Vantaa",Vantaa,Martinlaakso,01620,60.28669,24.84547,640000,295,Hyvä,6,"Katso 28 kuvaa tästä 640000 €, 6h, keittiö 2x, kph 2x, s, erill.wc 2x, parvi, kuntoilutila, takkah, autotalli, 295 m² Asunnot Erillistalo vuodelta 1982",https://asunnot.oikotie.fi/myytavat-asunnot/vantaa/22490946
-"Satulamaakarintie 12, 02780, Espoo",Espoo,Vanttila,02780,60.190862846257,24.619590354446,529000,170,Hyvä,6,"Katso 42 kuvaa tästä 529000 €, 4mh+oh/avok+aula+khh+s+ph+3 kpl wc+studio+työh+at+kk, 170 m² Asunnot vuodelta 2002",https://asunnot.oikotie.fi/myytavat-asunnot/espoo/22100228
+Address,City,Neighborhood,Postal Code,Latitude,Longitude,Price (€),Size (m²),Condition,Bedrooms,Description,URL,Velaton hinta,Myyntihinta,Lainaosuuden maksu,Neliöhinta,Velkaosuus,Hoitovastike,Pääomavastike,Erityisvastike,Yhtiövastike yhteensä,Lämmityskustannukset,Muut kustannukset
+"Katiskakuja 2, 02230, Espoo",Espoo,"Nuottaniemi, Matinkylä, Nuottalahti, Nuottaniemi",02230,60.150710771908,24.73597056049,648000,126.0,Hyvä,4,"Katso 35 kuvaa tästä 648000 €, 3-4 h, k, rt, erill. wc, kph/ wc, kph/khh, s, lämmin var., parveke, terassi, piha, autokatos (yj. 3-4h+k+s+lämm.var), 126 m² Asunnot vuodelta 1998",https://asunnot.oikotie.fi/myytavat-asunnot/espoo/21407273,648 000 €,"644 493,89 €",Kyllä,"5 142,86 € / m²","3 506,11 €",693 € / kk,"31,50 € / kk",N/A,"724,50 € / kk",N/A,"Muut maksut: Vesimaksu on ennakko ja tasataan mittareiden mukaan. Yhtiössä on huoneistokohtaiset vesimittarit, jotka luetaan kerran vuodessa.
+Käyttösähkö kulutuksen mukaan. 
+Kotivakuutusmaksut omien sopimusehtojen mukaisesti.
+Varainsiirtovero 1,5 % velattomasta hinnasta. 
+
+Hallituksella valtuudet kahden ylimääräisen vastikkeen perimiseen alakatteiden maalaukseen sekä lisäksi tarpeen mukaan kahden ylimääräisen vastikkeen perimiseen.
+(valtuutus on voimassa seuraavaan varsinaiseen yhtiökokoukseen saakka).
+
+Taloyhtiön osakeluettelo on siirretty huoneistotietojärjestelmään. Ostajan tulee hakea omistusoikeuden rekisteröintiä Maanmittauslaitokselta kaupan jälkeen. Ostaja vastaa omistusoikeuden rekisteröintikustannuksista, mahdollisista osakekirjan mitätöinnistä aiheutuvista kustannuksista sekä mahdollisesta hakemusmaksun korotuksesta. Ostajan pankin ostajalta mahdollisesti veloittamista kaupantekoon, omistusoikeuden rekisteröintiin tai panttausmerkinnän hakemiseen liittyvistä kustannuksista ostaja saa tiedon pankiltaan."
+"Nuottalahti 2, 02230, Espoo",Espoo,"Nuottalahti, Matinkylä, Nuottalahti, Nuottaniemi",02230,60.150945767988,24.733954451596,628000,119.5,Hyvä,5,"Katso 23 kuvaa tästä 628000 €, 5h+k+s+lämm.var (yj mukaan 5 h+k+s+lämm. var), 119.5 m² Asunnot vuodelta 2000",https://asunnot.oikotie.fi/myytavat-asunnot/espoo/21943149,628 000 €,"590 485,94 €",Kyllä,"5 255,23 € / m²","37 514,06 €","489,95 € / kk","380,01 € / kk","101,58 € / kk","971,54 € / kk",175 € / kk,"Muut maksut: Vesimaksuennakko 15 €/hlö/kk. Yhtiössä on huoneistokohtaiset vesimittarit. Vedenkulutuksen tasauslaskutus tehdään vuosittain.
+Korjausvastiketta kerätään PTS korjauksiin. 
+Autopaikkojen ylläpito- ja hoitokustannukset sisältyvät hoitovastikkeeseen. 
+
+Hallitukselle myönnetty valtuudet periä 2 kpl hoito- ja/tai rahoitusvastiketta. 
+
+Sähköauton latauksesta ja latausaseman ylläpitämisestä tehdään erillinen sopimus ja osakas vastaa aseman asennuksen ja ylläpitämisen kustannuksista. Yhtiö veloittaa osakkaalta lataukseen kulutetun sähkön. Jos uusi osakas haluaa käyttää jo asennettua latausasemaa niin hänen tulee hänen tehdä erillinen sopimus yhtiön kanssa jossa määritellään edellä mainitut vastuut.
+
+Esitetty sähkönkulutus perustuu nykykäyttöön ja voi siten olla suurempi tai pienempi riippuen asukasmäärästä, asumistottumuksista tai palveluntarjoajasta. Käyttösähkö kulutuksen/oman sähkösopimuksen mukaisesti. 
+Kotivakuutusmaksut omien sopimusehtojen mukaisesti. 
+Varainsiirtovero 1,5 % velattomasta kauppahinnasta.
+
+Taloyhtiön osakeluettelo on ennen kaupantekoa siirretty huoneistotietojärjestelmään, ostajan tulee hakea omistusoikeuden rekisteröintiä Maanmittauslaitokselta. Ostaja vastaa omistusoikeuden rekisteröintikustannuksista, mahdollisista osakekirjan mitätöinnistä aiheutuvista kustannuksista sekä mahdollisesta hakemusmaksun korotuksesta. Ostajan pankin ostajalta mahdollisesti veloittamista kaupantekoon, omistusoikeuden rekisteröintiin tai panttausmerkinnän hakemiseen liittyvistä kustannuksista ostaja saa tiedon pankiltaan."
