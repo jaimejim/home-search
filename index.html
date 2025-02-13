@@ -25,7 +25,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_99723e292e854bf1e04d2551c8a478da {
+                #map_236ab17523e2485cbbb60cd0fa2cb111 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -41,19 +41,37 @@
 <body>
     
     
-            <div class="folium-map" id="map_99723e292e854bf1e04d2551c8a478da" ></div>
+    <div style="position: fixed; 
+                bottom: 50px; right: 50px; width: 150px; height: 160px; 
+                border:2px solid grey; z-index:9999; font-size:14px;
+                background-color:white;
+                padding: 10px;
+                border-radius: 5px;
+                ">
+        <p style="margin-top: 0;"><b>Legend</b></p>
+        <p style="margin: 0;">
+        <i class="fa fa-home"></i> New listing<br>
+        <i class="fa fa-arrow-up"></i> Price increased<br>
+        <i class="fa fa-arrow-down"></i> Price decreased<br>
+        <i class="fa fa-house-user"></i> Removed<br>
+        <i class="fa fa-map-marker"></i> No change
+        </p>
+    </div>
+    
+    
+            <div class="folium-map" id="map_236ab17523e2485cbbb60cd0fa2cb111" ></div>
         
 </body>
 <script>
     
     
-            var map_99723e292e854bf1e04d2551c8a478da = L.map(
-                "map_99723e292e854bf1e04d2551c8a478da",
+            var map_236ab17523e2485cbbb60cd0fa2cb111 = L.map(
+                "map_236ab17523e2485cbbb60cd0fa2cb111",
                 {
-                    center: [60.2, 24.8],
+                    center: [60.16499709375, 24.59503615625],
                     crs: L.CRS.EPSG3857,
                     ...{
-  "zoom": 12,
+  "zoom": 11,
   "zoomControl": true,
   "preferCanvas": false,
 }
@@ -65,7 +83,7 @@
 
         
     
-            var tile_layer_ee7281bc27ab8a87aec1a7f6f67207ce = L.tileLayer(
+            var tile_layer_4c7b5e8813789998a20c0872a250a53c = L.tileLayer(
                 "https://tiles.stadiamaps.com/tiles/stamen_toner/{z}/{x}/{y}.png?api_key=6ebb02f3-6eaa-4ab8-bdd3-57bbb9a0bc69",
                 {
   "minZoom": 0,
@@ -82,514 +100,1767 @@
             );
         
     
-            tile_layer_ee7281bc27ab8a87aec1a7f6f67207ce.addTo(map_99723e292e854bf1e04d2551c8a478da);
+            tile_layer_4c7b5e8813789998a20c0872a250a53c.addTo(map_236ab17523e2485cbbb60cd0fa2cb111);
         
     
-            var marker_2f41f0f12af2120684e15be3fdfa3732 = L.marker(
-                [60.28669, 24.84547],
+            var marker_806f19684deb03005262db91c77ba4ba = L.marker(
+                [60.225324, 24.836751],
                 {
 }
-            ).addTo(map_99723e292e854bf1e04d2551c8a478da);
+            ).addTo(map_236ab17523e2485cbbb60cd0fa2cb111);
         
     
-            var beautify_icon_06d662beeab5af2d290185828868ecf8 = new L.BeautifyIcon.icon(
+            var beautify_icon_f1c490d1edc7e6d4bde3b7b455923dca = new L.BeautifyIcon.icon(
                 {
+  "icon": "house-user",
   "iconShape": "marker",
-  "borderWidth": 5,
-  "borderColor": "#0000FF",
-  "textColor": "white",
+  "borderWidth": 3,
+  "borderColor": "#black",
+  "textColor": "#000",
   "backgroundColor": "white",
   "innerIconStyle": "",
   "spin": false,
   "isAlphaNumericIcon": false,
 }
             )
-            marker_2f41f0f12af2120684e15be3fdfa3732.setIcon(beautify_icon_06d662beeab5af2d290185828868ecf8);
+            marker_806f19684deb03005262db91c77ba4ba.setIcon(beautify_icon_f1c490d1edc7e6d4bde3b7b455923dca);
         
     
-        var popup_db0039cdac2b65c9fb6eadd289a25c4f = L.popup({
+        var popup_dd763cbc6c59498dfde4d9bbdc405078 = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_e70f2c60b129d003ea38fc4ab0a3f562 = $(`<div id="html_e70f2c60b129d003ea38fc4ab0a3f562" style="width: 100.0%; height: 100.0%;">         <b>Monsaksenkuja 9, 01620, Vantaa</b><br>         <b>City:</b> Vantaa<br>         <b>Neighborhood:</b> Martinlaakso<br>         <b>Postal Code:</b> 01620<br>         <b>Price:</b> €640000<br>         <b>Size:</b> 295.0 m²<br>         <b>Condition:</b> Hyvä<br>         <b>Bedrooms:</b> 6<br>         <b>Maintenance charge:</b> N/A<br>         <b>Capital charge:</b> N/A<br>         <b>Special charge:</b> N/A<br>         <b>Total company charge:</b> 0 € / kk<br>         <a href='https://asunnot.oikotie.fi/myytavat-asunnot/vantaa/22490946' target='_blank'>View Listing</a>         </div>`)[0];
-                popup_db0039cdac2b65c9fb6eadd289a25c4f.setContent(html_e70f2c60b129d003ea38fc4ab0a3f562);
+                var html_95745e413e7f3d28d113af04baa1a8f8 = $(`<div id="html_95745e413e7f3d28d113af04baa1a8f8" style="width: 100.0%; height: 100.0%;">     <b>Sotarovastintie 4, 00370, Espoo</b><br>     <b>City:</b> Espoo<br>     <b>Neighborhood:</b> 51 / Mäkkylä, Mäkkylä, Länsi-Helsinki<br>     <b>Postal Code:</b> 00370<br>     <b>Price:</b> €650000<br>     <b>Size:</b> 175.5 m²<br>     <b>Construction Year:</b> 1972<br>     <b>Condition:</b> Tyydyttävä<br>     <b>Bedrooms:</b> 6<br>     <b>Maintenance charge:</b> nan<br>     <b>Capital charge:</b> nan<br>     <b>Special charge:</b> nan<br>     <b>Total company charge:</b> nan<br>     <a href='https://asunnot.oikotie.fi/myytavat-asunnot/espoo/22208881' target='_blank'>View Listing</a>     </div>`)[0];
+                popup_dd763cbc6c59498dfde4d9bbdc405078.setContent(html_95745e413e7f3d28d113af04baa1a8f8);
             
         
 
-        marker_2f41f0f12af2120684e15be3fdfa3732.bindPopup(popup_db0039cdac2b65c9fb6eadd289a25c4f)
+        marker_806f19684deb03005262db91c77ba4ba.bindPopup(popup_dd763cbc6c59498dfde4d9bbdc405078)
         ;
 
         
     
     
-            var marker_c478c44efce637d1f9053eac886ad81c = L.marker(
-                [60.190862846257, 24.619590354446],
+            marker_806f19684deb03005262db91c77ba4ba.bindTooltip(
+                `<div>
+                     
+    <b>Sotarovastintie 4, 00370, Espoo</b><br>
+    <b>Price:</b> €650000<br>
+    <b>Size:</b> 175.5 m²<br>
+    <b>Year:</b> 1972
+    
+                 </div>`,
                 {
+  "sticky": true,
 }
-            ).addTo(map_99723e292e854bf1e04d2551c8a478da);
+            );
         
     
-            var beautify_icon_f57e7e97e92ae15e649f7e4bec85af78 = new L.BeautifyIcon.icon(
+            var marker_26ecb204d7b5b713b022531a1e5ced5d = L.marker(
+                [60.080351, 24.288194],
                 {
+}
+            ).addTo(map_236ab17523e2485cbbb60cd0fa2cb111);
+        
+    
+            var beautify_icon_52a8d61e25da1e8ab325bee58f4c712d = new L.BeautifyIcon.icon(
+                {
+  "icon": "house-user",
   "iconShape": "marker",
-  "borderWidth": 5,
-  "borderColor": "#0000FF",
-  "textColor": "white",
+  "borderWidth": 3,
+  "borderColor": "#black",
+  "textColor": "#000",
   "backgroundColor": "white",
   "innerIconStyle": "",
   "spin": false,
   "isAlphaNumericIcon": false,
 }
             )
-            marker_c478c44efce637d1f9053eac886ad81c.setIcon(beautify_icon_f57e7e97e92ae15e649f7e4bec85af78);
+            marker_26ecb204d7b5b713b022531a1e5ced5d.setIcon(beautify_icon_52a8d61e25da1e8ab325bee58f4c712d);
         
     
-        var popup_6652c8e7cd553743b119bdc1e38f869e = L.popup({
+        var popup_c2baf32f1dd917d28fcd970ca4aa9361 = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_bb8e6ab8dc81a2eb23004ad0c2ed020e = $(`<div id="html_bb8e6ab8dc81a2eb23004ad0c2ed020e" style="width: 100.0%; height: 100.0%;">         <b>Satulamaakarintie 12, 02780, Espoo</b><br>         <b>City:</b> Espoo<br>         <b>Neighborhood:</b> Vanttila<br>         <b>Postal Code:</b> 02780<br>         <b>Price:</b> €529000<br>         <b>Size:</b> 170.0 m²<br>         <b>Condition:</b> Hyvä<br>         <b>Bedrooms:</b> 6<br>         <b>Maintenance charge:</b> N/A<br>         <b>Capital charge:</b> N/A<br>         <b>Special charge:</b> N/A<br>         <b>Total company charge:</b> N/A<br>         <a href='https://asunnot.oikotie.fi/myytavat-asunnot/espoo/22100228' target='_blank'>View Listing</a>         </div>`)[0];
-                popup_6652c8e7cd553743b119bdc1e38f869e.setContent(html_bb8e6ab8dc81a2eb23004ad0c2ed020e);
+                var html_a82d1598dfc8d651f503dfd10205ab48 = $(`<div id="html_a82d1598dfc8d651f503dfd10205ab48" style="width: 100.0%; height: 100.0%;">     <b>Mäntykalliontie 7, 02580, Siuntio</b><br>     <b>City:</b> Siuntio<br>     <b>Neighborhood:</b> Pickala, Störsvik<br>     <b>Postal Code:</b> 02580<br>     <b>Price:</b> €616000<br>     <b>Size:</b> 197.1 m²<br>     <b>Construction Year:</b> 2005<br>     <b>Condition:</b> Hyvä<br>     <b>Bedrooms:</b> 6<br>     <b>Maintenance charge:</b> nan<br>     <b>Capital charge:</b> nan<br>     <b>Special charge:</b> nan<br>     <b>Total company charge:</b> nan<br>     <a href='https://asunnot.oikotie.fi/myytavat-asunnot/siuntio/22379096' target='_blank'>View Listing</a>     </div>`)[0];
+                popup_c2baf32f1dd917d28fcd970ca4aa9361.setContent(html_a82d1598dfc8d651f503dfd10205ab48);
             
         
 
-        marker_c478c44efce637d1f9053eac886ad81c.bindPopup(popup_6652c8e7cd553743b119bdc1e38f869e)
+        marker_26ecb204d7b5b713b022531a1e5ced5d.bindPopup(popup_c2baf32f1dd917d28fcd970ca4aa9361)
         ;
 
         
     
     
-            var marker_c36e7c836020c78f06bf9bdfc5ce2559 = L.marker(
-                [60.152307004154, 24.762239388595],
+            marker_26ecb204d7b5b713b022531a1e5ced5d.bindTooltip(
+                `<div>
+                     
+    <b>Mäntykalliontie 7, 02580, Siuntio</b><br>
+    <b>Price:</b> €616000<br>
+    <b>Size:</b> 197.1 m²<br>
+    <b>Year:</b> 2005
+    
+                 </div>`,
                 {
+  "sticky": true,
 }
-            ).addTo(map_99723e292e854bf1e04d2551c8a478da);
+            );
         
     
-            var beautify_icon_5f4d9c9d63215f47a74edc33550bc5c4 = new L.BeautifyIcon.icon(
+            var marker_7f94ccfa1d4fc72b77530f5d9d0357ee = L.marker(
+                [60.071037, 24.297558],
                 {
+}
+            ).addTo(map_236ab17523e2485cbbb60cd0fa2cb111);
+        
+    
+            var beautify_icon_a7a5cfc3c5e884446d2a1b2a4cc3bbc3 = new L.BeautifyIcon.icon(
+                {
+  "icon": "house-user",
   "iconShape": "marker",
-  "borderWidth": 5,
-  "borderColor": "#0000FF",
-  "textColor": "white",
+  "borderWidth": 3,
+  "borderColor": "#black",
+  "textColor": "#000",
   "backgroundColor": "white",
   "innerIconStyle": "",
   "spin": false,
   "isAlphaNumericIcon": false,
 }
             )
-            marker_c36e7c836020c78f06bf9bdfc5ce2559.setIcon(beautify_icon_5f4d9c9d63215f47a74edc33550bc5c4);
+            marker_7f94ccfa1d4fc72b77530f5d9d0357ee.setIcon(beautify_icon_a7a5cfc3c5e884446d2a1b2a4cc3bbc3);
         
     
-        var popup_e7f683469b07f34747021d38977b8469 = L.popup({
+        var popup_86a53041b8a5f87776c88d663aa0bf80 = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_e2b5b2928012aa3316638404334f7188 = $(`<div id="html_e2b5b2928012aa3316638404334f7188" style="width: 100.0%; height: 100.0%;">         <b>Koukkuniementie 7, 02230, Espoo</b><br>         <b>City:</b> Espoo<br>         <b>Neighborhood:</b> Koukkuniemi, Matinkylä, Koukkuniemi<br>         <b>Postal Code:</b> 02230<br>         <b>Price:</b> €490000<br>         <b>Size:</b> 122.5 m²<br>         <b>Condition:</b> Tyydyttävä<br>         <b>Bedrooms:</b> 5<br>         <b>Maintenance charge:</b> 612,50 € / kk<br>         <b>Capital charge:</b> 159,25 € / kk<br>         <b>Special charge:</b> N/A<br>         <b>Total company charge:</b> 771,75 € / kk<br>         <a href='https://asunnot.oikotie.fi/myytavat-asunnot/espoo/22160378' target='_blank'>View Listing</a>         </div>`)[0];
-                popup_e7f683469b07f34747021d38977b8469.setContent(html_e2b5b2928012aa3316638404334f7188);
+                var html_10b62c5ef2647144e19da64397750803 = $(`<div id="html_10b62c5ef2647144e19da64397750803" style="width: 100.0%; height: 100.0%;">     <b>Saunaniemenkuja 3, 02580, Siuntio</b><br>     <b>City:</b> Siuntio<br>     <b>Neighborhood:</b> Störsvik<br>     <b>Postal Code:</b> 02580<br>     <b>Price:</b> €799000<br>     <b>Size:</b> 221.5 m²<br>     <b>Construction Year:</b> 2005<br>     <b>Condition:</b> Hyvä<br>     <b>Bedrooms:</b> 5<br>     <b>Maintenance charge:</b> nan<br>     <b>Capital charge:</b> nan<br>     <b>Special charge:</b> nan<br>     <b>Total company charge:</b> nan<br>     <a href='https://asunnot.oikotie.fi/myytavat-asunnot/siuntio/21618487' target='_blank'>View Listing</a>     </div>`)[0];
+                popup_86a53041b8a5f87776c88d663aa0bf80.setContent(html_10b62c5ef2647144e19da64397750803);
             
         
 
-        marker_c36e7c836020c78f06bf9bdfc5ce2559.bindPopup(popup_e7f683469b07f34747021d38977b8469)
+        marker_7f94ccfa1d4fc72b77530f5d9d0357ee.bindPopup(popup_86a53041b8a5f87776c88d663aa0bf80)
         ;
 
         
     
     
-            var marker_588da41e463b08c939592ffcda5cba4c = L.marker(
-                [60.183192, 24.759198],
+            marker_7f94ccfa1d4fc72b77530f5d9d0357ee.bindTooltip(
+                `<div>
+                     
+    <b>Saunaniemenkuja 3, 02580, Siuntio</b><br>
+    <b>Price:</b> €799000<br>
+    <b>Size:</b> 221.5 m²<br>
+    <b>Year:</b> 2005
+    
+                 </div>`,
                 {
+  "sticky": true,
 }
-            ).addTo(map_99723e292e854bf1e04d2551c8a478da);
+            );
         
     
-            var beautify_icon_c5bdf958064c57001deb35d51b78a2b3 = new L.BeautifyIcon.icon(
+            var marker_46e7451a908cde1116975bac21ad7f83 = L.marker(
+                [60.225324, 24.836751],
                 {
+}
+            ).addTo(map_236ab17523e2485cbbb60cd0fa2cb111);
+        
+    
+            var beautify_icon_d86b67a7e07d59583f52230311e4696b = new L.BeautifyIcon.icon(
+                {
+  "icon": "house-user",
   "iconShape": "marker",
-  "borderWidth": 5,
-  "borderColor": "#0000FF",
-  "textColor": "white",
+  "borderWidth": 3,
+  "borderColor": "#black",
+  "textColor": "#000",
   "backgroundColor": "white",
   "innerIconStyle": "",
   "spin": false,
   "isAlphaNumericIcon": false,
 }
             )
-            marker_588da41e463b08c939592ffcda5cba4c.setIcon(beautify_icon_c5bdf958064c57001deb35d51b78a2b3);
+            marker_46e7451a908cde1116975bac21ad7f83.setIcon(beautify_icon_d86b67a7e07d59583f52230311e4696b);
         
     
-        var popup_cd15e02521333a5ee762c184f55f8c54 = L.popup({
+        var popup_69d26865d3b1d01d8851e31b34aadaa5 = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_9aa7f579f3693fb3a90f110e5c1d959c = $(`<div id="html_9aa7f579f3693fb3a90f110e5c1d959c" style="width: 100.0%; height: 100.0%;">         <b>Juhannustie 6, 02200, Espoo</b><br>         <b>City:</b> Espoo<br>         <b>Neighborhood:</b> Mankkaa<br>         <b>Postal Code:</b> 02200<br>         <b>Price:</b> €629000<br>         <b>Size:</b> 179.0 m²<br>         <b>Condition:</b> Tyydyttävä<br>         <b>Bedrooms:</b> 5<br>         <b>Maintenance charge:</b> 275 € / kk<br>         <b>Capital charge:</b> N/A<br>         <b>Special charge:</b> N/A<br>         <b>Total company charge:</b> 275 € / kk<br>         <a href='https://asunnot.oikotie.fi/myytavat-asunnot/espoo/22782661' target='_blank'>View Listing</a>         </div>`)[0];
-                popup_cd15e02521333a5ee762c184f55f8c54.setContent(html_9aa7f579f3693fb3a90f110e5c1d959c);
+                var html_072cd5d4afc0e49750e4461221b8dfae = $(`<div id="html_072cd5d4afc0e49750e4461221b8dfae" style="width: 100.0%; height: 100.0%;">     <b>Sotarovastintie 4, 00370, Espoo</b><br>     <b>City:</b> Espoo<br>     <b>Neighborhood:</b> 51 / Mäkkylä, Mäkkylä, Länsi-Helsinki<br>     <b>Postal Code:</b> 00370<br>     <b>Price:</b> €650000<br>     <b>Size:</b> 175.5 m²<br>     <b>Construction Year:</b> 1972<br>     <b>Condition:</b> Tyydyttävä<br>     <b>Bedrooms:</b> 6<br>     <b>Maintenance charge:</b> nan<br>     <b>Capital charge:</b> nan<br>     <b>Special charge:</b> nan<br>     <b>Total company charge:</b> nan<br>     <a href='https://asunnot.oikotie.fi/myytavat-asunnot/espoo/22208881' target='_blank'>View Listing</a>     </div>`)[0];
+                popup_69d26865d3b1d01d8851e31b34aadaa5.setContent(html_072cd5d4afc0e49750e4461221b8dfae);
             
         
 
-        marker_588da41e463b08c939592ffcda5cba4c.bindPopup(popup_cd15e02521333a5ee762c184f55f8c54)
+        marker_46e7451a908cde1116975bac21ad7f83.bindPopup(popup_69d26865d3b1d01d8851e31b34aadaa5)
         ;
 
         
     
     
-            var marker_939b800727f10c97f7a8464c0fbd1ede = L.marker(
-                [60.326715, 24.854068],
+            marker_46e7451a908cde1116975bac21ad7f83.bindTooltip(
+                `<div>
+                     
+    <b>Sotarovastintie 4, 00370, Espoo</b><br>
+    <b>Price:</b> €650000<br>
+    <b>Size:</b> 175.5 m²<br>
+    <b>Year:</b> 1972
+    
+                 </div>`,
                 {
+  "sticky": true,
 }
-            ).addTo(map_99723e292e854bf1e04d2551c8a478da);
+            );
         
     
-            var beautify_icon_f1602263f6209e5f4c8b9e2fa0a95b66 = new L.BeautifyIcon.icon(
+            var marker_200b02b5f38870474c380fa9e9f3b08b = L.marker(
+                [60.071037, 24.297558],
                 {
+}
+            ).addTo(map_236ab17523e2485cbbb60cd0fa2cb111);
+        
+    
+            var beautify_icon_df6f3e365c4cd0b97500004d0fc78a0d = new L.BeautifyIcon.icon(
+                {
+  "icon": "house-user",
   "iconShape": "marker",
-  "borderWidth": 5,
-  "borderColor": "#0000FF",
-  "textColor": "white",
+  "borderWidth": 3,
+  "borderColor": "#black",
+  "textColor": "#000",
   "backgroundColor": "white",
   "innerIconStyle": "",
   "spin": false,
   "isAlphaNumericIcon": false,
 }
             )
-            marker_939b800727f10c97f7a8464c0fbd1ede.setIcon(beautify_icon_f1602263f6209e5f4c8b9e2fa0a95b66);
+            marker_200b02b5f38870474c380fa9e9f3b08b.setIcon(beautify_icon_df6f3e365c4cd0b97500004d0fc78a0d);
         
     
-        var popup_14ba9e1ad8ca365eb1dfc70897ad0c99 = L.popup({
+        var popup_9d2ece721feea19a11cb3c059baa29c3 = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_f636480c715b39caba7db27c5e9e70ec = $(`<div id="html_f636480c715b39caba7db27c5e9e70ec" style="width: 100.0%; height: 100.0%;">         <b>Ritaritie 11, 01700, Vantaa</b><br>         <b>City:</b> Vantaa<br>         <b>Neighborhood:</b> Kivistö<br>         <b>Postal Code:</b> 01700<br>         <b>Price:</b> €565000<br>         <b>Size:</b> 153.0 m²<br>         <b>Condition:</b> Hyvä<br>         <b>Bedrooms:</b> 4<br>         <b>Maintenance charge:</b> N/A<br>         <b>Capital charge:</b> N/A<br>         <b>Special charge:</b> N/A<br>         <b>Total company charge:</b> N/A<br>         <a href='https://asunnot.oikotie.fi/myytavat-asunnot/vantaa/22782982' target='_blank'>View Listing</a>         </div>`)[0];
-                popup_14ba9e1ad8ca365eb1dfc70897ad0c99.setContent(html_f636480c715b39caba7db27c5e9e70ec);
+                var html_6657f194eefc92b5b5289dfde886aefd = $(`<div id="html_6657f194eefc92b5b5289dfde886aefd" style="width: 100.0%; height: 100.0%;">     <b>Saunaniemenkuja 3, 02580, Siuntio</b><br>     <b>City:</b> Siuntio<br>     <b>Neighborhood:</b> Störsvik<br>     <b>Postal Code:</b> 02580<br>     <b>Price:</b> €799000<br>     <b>Size:</b> 221.5 m²<br>     <b>Construction Year:</b> 2005<br>     <b>Condition:</b> Hyvä<br>     <b>Bedrooms:</b> 5<br>     <b>Maintenance charge:</b> nan<br>     <b>Capital charge:</b> nan<br>     <b>Special charge:</b> nan<br>     <b>Total company charge:</b> nan<br>     <a href='https://asunnot.oikotie.fi/myytavat-asunnot/siuntio/21618487' target='_blank'>View Listing</a>     </div>`)[0];
+                popup_9d2ece721feea19a11cb3c059baa29c3.setContent(html_6657f194eefc92b5b5289dfde886aefd);
             
         
 
-        marker_939b800727f10c97f7a8464c0fbd1ede.bindPopup(popup_14ba9e1ad8ca365eb1dfc70897ad0c99)
+        marker_200b02b5f38870474c380fa9e9f3b08b.bindPopup(popup_9d2ece721feea19a11cb3c059baa29c3)
         ;
 
         
     
     
-            var marker_3b1495c9cd3404afaa405d36ee7b9703 = L.marker(
-                [60.150710771908, 24.73597056049],
+            marker_200b02b5f38870474c380fa9e9f3b08b.bindTooltip(
+                `<div>
+                     
+    <b>Saunaniemenkuja 3, 02580, Siuntio</b><br>
+    <b>Price:</b> €799000<br>
+    <b>Size:</b> 221.5 m²<br>
+    <b>Year:</b> 2005
+    
+                 </div>`,
                 {
+  "sticky": true,
 }
-            ).addTo(map_99723e292e854bf1e04d2551c8a478da);
+            );
         
     
-            var beautify_icon_daa317a51be8c12783bfb0d031e974ff = new L.BeautifyIcon.icon(
+            var marker_fa5c3ec2244757aa4ac5e9fae0bb0843 = L.marker(
+                [60.080351, 24.288194],
                 {
+}
+            ).addTo(map_236ab17523e2485cbbb60cd0fa2cb111);
+        
+    
+            var beautify_icon_5b6e5147af58a84a9dbe4545dfa85886 = new L.BeautifyIcon.icon(
+                {
+  "icon": "house-user",
   "iconShape": "marker",
-  "borderWidth": 5,
-  "borderColor": "#0000FF",
-  "textColor": "white",
+  "borderWidth": 3,
+  "borderColor": "#black",
+  "textColor": "#000",
   "backgroundColor": "white",
   "innerIconStyle": "",
   "spin": false,
   "isAlphaNumericIcon": false,
 }
             )
-            marker_3b1495c9cd3404afaa405d36ee7b9703.setIcon(beautify_icon_daa317a51be8c12783bfb0d031e974ff);
+            marker_fa5c3ec2244757aa4ac5e9fae0bb0843.setIcon(beautify_icon_5b6e5147af58a84a9dbe4545dfa85886);
         
     
-        var popup_51b56d222415abfe565c31f90a66cc6d = L.popup({
+        var popup_0a9186feb113722fb88cb1bcefb00d6f = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_9b6848259dd2ca1d71d70f82bc867773 = $(`<div id="html_9b6848259dd2ca1d71d70f82bc867773" style="width: 100.0%; height: 100.0%;">         <b>Katiskakuja 2, 02230, Espoo</b><br>         <b>City:</b> Espoo<br>         <b>Neighborhood:</b> Nuottaniemi, Matinkylä, Nuottalahti, Nuottaniemi<br>         <b>Postal Code:</b> 02230<br>         <b>Price:</b> €648000<br>         <b>Size:</b> 126.0 m²<br>         <b>Condition:</b> Hyvä<br>         <b>Bedrooms:</b> 4<br>         <b>Maintenance charge:</b> 693 € / kk<br>         <b>Capital charge:</b> 31,50 € / kk<br>         <b>Special charge:</b> N/A<br>         <b>Total company charge:</b> 724,50 € / kk<br>         <a href='https://asunnot.oikotie.fi/myytavat-asunnot/espoo/21407273' target='_blank'>View Listing</a>         </div>`)[0];
-                popup_51b56d222415abfe565c31f90a66cc6d.setContent(html_9b6848259dd2ca1d71d70f82bc867773);
+                var html_d2349ac4ee08382973859a3b7af3aa6e = $(`<div id="html_d2349ac4ee08382973859a3b7af3aa6e" style="width: 100.0%; height: 100.0%;">     <b>Mäntykalliontie 7, 02580, Siuntio</b><br>     <b>City:</b> Siuntio<br>     <b>Neighborhood:</b> Pickala, Störsvik<br>     <b>Postal Code:</b> 02580<br>     <b>Price:</b> €616000<br>     <b>Size:</b> 197.1 m²<br>     <b>Construction Year:</b> 2005<br>     <b>Condition:</b> Hyvä<br>     <b>Bedrooms:</b> 6<br>     <b>Maintenance charge:</b> nan<br>     <b>Capital charge:</b> nan<br>     <b>Special charge:</b> nan<br>     <b>Total company charge:</b> nan<br>     <a href='https://asunnot.oikotie.fi/myytavat-asunnot/siuntio/22379096' target='_blank'>View Listing</a>     </div>`)[0];
+                popup_0a9186feb113722fb88cb1bcefb00d6f.setContent(html_d2349ac4ee08382973859a3b7af3aa6e);
             
         
 
-        marker_3b1495c9cd3404afaa405d36ee7b9703.bindPopup(popup_51b56d222415abfe565c31f90a66cc6d)
+        marker_fa5c3ec2244757aa4ac5e9fae0bb0843.bindPopup(popup_0a9186feb113722fb88cb1bcefb00d6f)
         ;
 
         
     
     
-            var marker_7eacfb33047114a83846b1ad43da3f64 = L.marker(
-                [60.150945767988, 24.733954451596],
+            marker_fa5c3ec2244757aa4ac5e9fae0bb0843.bindTooltip(
+                `<div>
+                     
+    <b>Mäntykalliontie 7, 02580, Siuntio</b><br>
+    <b>Price:</b> €616000<br>
+    <b>Size:</b> 197.1 m²<br>
+    <b>Year:</b> 2005
+    
+                 </div>`,
                 {
+  "sticky": true,
 }
-            ).addTo(map_99723e292e854bf1e04d2551c8a478da);
+            );
         
     
-            var beautify_icon_d25eb4b8bfcea38fff243f863a7296ab = new L.BeautifyIcon.icon(
+            var marker_44ba21fa7dddae66163d6bd3b8614b99 = L.marker(
+                [60.071037, 24.297558],
                 {
+}
+            ).addTo(map_236ab17523e2485cbbb60cd0fa2cb111);
+        
+    
+            var beautify_icon_0f350277e5131c8cc38c47067c282448 = new L.BeautifyIcon.icon(
+                {
+  "icon": "house-user",
   "iconShape": "marker",
-  "borderWidth": 5,
-  "borderColor": "#0000FF",
-  "textColor": "white",
+  "borderWidth": 3,
+  "borderColor": "#black",
+  "textColor": "#000",
   "backgroundColor": "white",
   "innerIconStyle": "",
   "spin": false,
   "isAlphaNumericIcon": false,
 }
             )
-            marker_7eacfb33047114a83846b1ad43da3f64.setIcon(beautify_icon_d25eb4b8bfcea38fff243f863a7296ab);
+            marker_44ba21fa7dddae66163d6bd3b8614b99.setIcon(beautify_icon_0f350277e5131c8cc38c47067c282448);
         
     
-        var popup_8574e6b4d8b8fd8f2e302793d19646ea = L.popup({
+        var popup_8a22f857b2a8fbb3ab8d666c88969475 = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_500d62de45a9bbee21f12be9901fa2dc = $(`<div id="html_500d62de45a9bbee21f12be9901fa2dc" style="width: 100.0%; height: 100.0%;">         <b>Nuottalahti 2, 02230, Espoo</b><br>         <b>City:</b> Espoo<br>         <b>Neighborhood:</b> Nuottalahti, Matinkylä, Nuottalahti, Nuottaniemi<br>         <b>Postal Code:</b> 02230<br>         <b>Price:</b> €628000<br>         <b>Size:</b> 119.5 m²<br>         <b>Condition:</b> Hyvä<br>         <b>Bedrooms:</b> 5<br>         <b>Maintenance charge:</b> 489,95 € / kk<br>         <b>Capital charge:</b> 380,01 € / kk<br>         <b>Special charge:</b> 101,58 € / kk<br>         <b>Total company charge:</b> 971,54 € / kk<br>         <a href='https://asunnot.oikotie.fi/myytavat-asunnot/espoo/21943149' target='_blank'>View Listing</a>         </div>`)[0];
-                popup_8574e6b4d8b8fd8f2e302793d19646ea.setContent(html_500d62de45a9bbee21f12be9901fa2dc);
+                var html_041cab5ab4b50c7cfd24f1154fb0bd66 = $(`<div id="html_041cab5ab4b50c7cfd24f1154fb0bd66" style="width: 100.0%; height: 100.0%;">     <b>Saunaniemenkuja 3, 02580, Siuntio</b><br>     <b>City:</b> Siuntio<br>     <b>Neighborhood:</b> Störsvik<br>     <b>Postal Code:</b> 02580<br>     <b>Price:</b> €799000<br>     <b>Size:</b> 221.5 m²<br>     <b>Construction Year:</b> 2005<br>     <b>Condition:</b> Hyvä<br>     <b>Bedrooms:</b> 5<br>     <b>Maintenance charge:</b> nan<br>     <b>Capital charge:</b> nan<br>     <b>Special charge:</b> nan<br>     <b>Total company charge:</b> nan<br>     <a href='https://asunnot.oikotie.fi/myytavat-asunnot/siuntio/21618487' target='_blank'>View Listing</a>     </div>`)[0];
+                popup_8a22f857b2a8fbb3ab8d666c88969475.setContent(html_041cab5ab4b50c7cfd24f1154fb0bd66);
             
         
 
-        marker_7eacfb33047114a83846b1ad43da3f64.bindPopup(popup_8574e6b4d8b8fd8f2e302793d19646ea)
+        marker_44ba21fa7dddae66163d6bd3b8614b99.bindPopup(popup_8a22f857b2a8fbb3ab8d666c88969475)
         ;
 
         
     
     
-            var marker_f0c17ebac4193e704b1c774500b4c693 = L.marker(
-                [60.172263904253, 24.628869894102],
+            marker_44ba21fa7dddae66163d6bd3b8614b99.bindTooltip(
+                `<div>
+                     
+    <b>Saunaniemenkuja 3, 02580, Siuntio</b><br>
+    <b>Price:</b> €799000<br>
+    <b>Size:</b> 221.5 m²<br>
+    <b>Year:</b> 2005
+    
+                 </div>`,
                 {
+  "sticky": true,
 }
-            ).addTo(map_99723e292e854bf1e04d2551c8a478da);
+            );
         
     
-            var beautify_icon_a85219c4a5f8acd89c1d9bd5e66fb897 = new L.BeautifyIcon.icon(
+            var marker_9169e1efa2bd1011613d9ffe937e5b86 = L.marker(
+                [60.225324, 24.836751],
                 {
+}
+            ).addTo(map_236ab17523e2485cbbb60cd0fa2cb111);
+        
+    
+            var beautify_icon_a0cd057f4c6cd7ccb1c3f8e5f43e066d = new L.BeautifyIcon.icon(
+                {
+  "icon": "house-user",
   "iconShape": "marker",
-  "borderWidth": 5,
-  "borderColor": "#0000FF",
-  "textColor": "white",
+  "borderWidth": 3,
+  "borderColor": "#black",
+  "textColor": "#000",
   "backgroundColor": "white",
   "innerIconStyle": "",
   "spin": false,
   "isAlphaNumericIcon": false,
 }
             )
-            marker_f0c17ebac4193e704b1c774500b4c693.setIcon(beautify_icon_a85219c4a5f8acd89c1d9bd5e66fb897);
+            marker_9169e1efa2bd1011613d9ffe937e5b86.setIcon(beautify_icon_a0cd057f4c6cd7ccb1c3f8e5f43e066d);
         
     
-        var popup_40dc4d37ee4cf028f06920fec74a0679 = L.popup({
+        var popup_ad32e20902d0f307255279b3128cf22c = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_e4a7c3fe27651a59e43bf4ba88b22201 = $(`<div id="html_e4a7c3fe27651a59e43bf4ba88b22201" style="width: 100.0%; height: 100.0%;">         <b>Vuoriharjuntie 10, 02330, Espoo</b><br>         <b>City:</b> Espoo<br>         <b>Neighborhood:</b> Tillinmäki, Saunalahti<br>         <b>Postal Code:</b> 02330<br>         <b>Price:</b> €498000<br>         <b>Size:</b> 126.0 m²<br>         <b>Condition:</b> Hyvä<br>         <b>Bedrooms:</b> 5<br>         <b>Maintenance charge:</b> 491,40 € / kk<br>         <b>Capital charge:</b> 341,10 € / kk<br>         <b>Special charge:</b> N/A<br>         <b>Total company charge:</b> 832,50 € / kk<br>         <a href='https://asunnot.oikotie.fi/myytavat-asunnot/espoo/22640475' target='_blank'>View Listing</a>         </div>`)[0];
-                popup_40dc4d37ee4cf028f06920fec74a0679.setContent(html_e4a7c3fe27651a59e43bf4ba88b22201);
+                var html_e307f87142a19705bbcc87444e9d050d = $(`<div id="html_e307f87142a19705bbcc87444e9d050d" style="width: 100.0%; height: 100.0%;">     <b>Sotarovastintie 4, 00370, Espoo</b><br>     <b>City:</b> Espoo<br>     <b>Neighborhood:</b> 51 / Mäkkylä, Mäkkylä, Länsi-Helsinki<br>     <b>Postal Code:</b> 00370<br>     <b>Price:</b> €650000<br>     <b>Size:</b> 175.5 m²<br>     <b>Construction Year:</b> 1972<br>     <b>Condition:</b> Tyydyttävä<br>     <b>Bedrooms:</b> 6<br>     <b>Maintenance charge:</b> nan<br>     <b>Capital charge:</b> nan<br>     <b>Special charge:</b> nan<br>     <b>Total company charge:</b> nan<br>     <a href='https://asunnot.oikotie.fi/myytavat-asunnot/espoo/22208881' target='_blank'>View Listing</a>     </div>`)[0];
+                popup_ad32e20902d0f307255279b3128cf22c.setContent(html_e307f87142a19705bbcc87444e9d050d);
             
         
 
-        marker_f0c17ebac4193e704b1c774500b4c693.bindPopup(popup_40dc4d37ee4cf028f06920fec74a0679)
+        marker_9169e1efa2bd1011613d9ffe937e5b86.bindPopup(popup_ad32e20902d0f307255279b3128cf22c)
         ;
 
         
     
     
-            var marker_044896d5a978ead827b677f8137b0504 = L.marker(
-                [60.16907391486, 24.688790399263],
+            marker_9169e1efa2bd1011613d9ffe937e5b86.bindTooltip(
+                `<div>
+                     
+    <b>Sotarovastintie 4, 00370, Espoo</b><br>
+    <b>Price:</b> €650000<br>
+    <b>Size:</b> 175.5 m²<br>
+    <b>Year:</b> 1972
+    
+                 </div>`,
                 {
+  "sticky": true,
 }
-            ).addTo(map_99723e292e854bf1e04d2551c8a478da);
+            );
         
     
-            var beautify_icon_c7da40a9b8d6cb5d2cfd757af81f09ad = new L.BeautifyIcon.icon(
+            var marker_e48ba9fc231ea377198349aa7b72f8f3 = L.marker(
+                [60.080351, 24.288194],
                 {
+}
+            ).addTo(map_236ab17523e2485cbbb60cd0fa2cb111);
+        
+    
+            var beautify_icon_ffd151237d9ff0370a518ab42b83c238 = new L.BeautifyIcon.icon(
+                {
+  "icon": "house-user",
   "iconShape": "marker",
-  "borderWidth": 5,
-  "borderColor": "#0000FF",
-  "textColor": "white",
+  "borderWidth": 3,
+  "borderColor": "#black",
+  "textColor": "#000",
   "backgroundColor": "white",
   "innerIconStyle": "",
   "spin": false,
   "isAlphaNumericIcon": false,
 }
             )
-            marker_044896d5a978ead827b677f8137b0504.setIcon(beautify_icon_c7da40a9b8d6cb5d2cfd757af81f09ad);
+            marker_e48ba9fc231ea377198349aa7b72f8f3.setIcon(beautify_icon_ffd151237d9ff0370a518ab42b83c238);
         
     
-        var popup_0b230cdc197ada9f28d7da9eb0a8dffc = L.popup({
+        var popup_e428f42a12a352c2d7aa82312c3eddf5 = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_83db5be6c866f637d0cf6b2495bc84d5 = $(`<div id="html_83db5be6c866f637d0cf6b2495bc84d5" style="width: 100.0%; height: 100.0%;">         <b>Eestinmalmi 12, 02280, Espoo</b><br>         <b>City:</b> Espoo<br>         <b>Neighborhood:</b> Eestinmalmi, Nöykkiö<br>         <b>Postal Code:</b> 02280<br>         <b>Price:</b> €618000<br>         <b>Size:</b> 143.0 m²<br>         <b>Condition:</b> Hyvä<br>         <b>Bedrooms:</b> 5<br>         <b>Maintenance charge:</b> 362,50 € / kk<br>         <b>Capital charge:</b> N/A<br>         <b>Special charge:</b> N/A<br>         <b>Total company charge:</b> 362,50 € / kk<br>         <a href='https://asunnot.oikotie.fi/myytavat-asunnot/espoo/22696126' target='_blank'>View Listing</a>         </div>`)[0];
-                popup_0b230cdc197ada9f28d7da9eb0a8dffc.setContent(html_83db5be6c866f637d0cf6b2495bc84d5);
+                var html_d91f3f7a4150256c46e792218338eee6 = $(`<div id="html_d91f3f7a4150256c46e792218338eee6" style="width: 100.0%; height: 100.0%;">     <b>Mäntykalliontie 7, 02580, Siuntio</b><br>     <b>City:</b> Siuntio<br>     <b>Neighborhood:</b> Pickala, Störsvik<br>     <b>Postal Code:</b> 02580<br>     <b>Price:</b> €616000<br>     <b>Size:</b> 197.1 m²<br>     <b>Construction Year:</b> 2005<br>     <b>Condition:</b> Hyvä<br>     <b>Bedrooms:</b> 6<br>     <b>Maintenance charge:</b> nan<br>     <b>Capital charge:</b> nan<br>     <b>Special charge:</b> nan<br>     <b>Total company charge:</b> nan<br>     <a href='https://asunnot.oikotie.fi/myytavat-asunnot/siuntio/22379096' target='_blank'>View Listing</a>     </div>`)[0];
+                popup_e428f42a12a352c2d7aa82312c3eddf5.setContent(html_d91f3f7a4150256c46e792218338eee6);
             
         
 
-        marker_044896d5a978ead827b677f8137b0504.bindPopup(popup_0b230cdc197ada9f28d7da9eb0a8dffc)
+        marker_e48ba9fc231ea377198349aa7b72f8f3.bindPopup(popup_e428f42a12a352c2d7aa82312c3eddf5)
         ;
 
         
     
     
-            var marker_0658aff2ba59a52ad935def32a073fb1 = L.marker(
-                [60.158618, 24.549248],
+            marker_e48ba9fc231ea377198349aa7b72f8f3.bindTooltip(
+                `<div>
+                     
+    <b>Mäntykalliontie 7, 02580, Siuntio</b><br>
+    <b>Price:</b> €616000<br>
+    <b>Size:</b> 197.1 m²<br>
+    <b>Year:</b> 2005
+    
+                 </div>`,
                 {
+  "sticky": true,
 }
-            ).addTo(map_99723e292e854bf1e04d2551c8a478da);
+            );
         
     
-            var beautify_icon_3674f65e81b1802b28b7ae638058279c = new L.BeautifyIcon.icon(
+            var marker_85ed4338b7679f4e5d405ddbe48a4c6a = L.marker(
+                [60.071037, 24.297558],
                 {
+}
+            ).addTo(map_236ab17523e2485cbbb60cd0fa2cb111);
+        
+    
+            var beautify_icon_05ba09f02ea45b988d8274f7a93839ce = new L.BeautifyIcon.icon(
+                {
+  "icon": "house-user",
   "iconShape": "marker",
-  "borderWidth": 5,
-  "borderColor": "#0000FF",
-  "textColor": "white",
+  "borderWidth": 3,
+  "borderColor": "#black",
+  "textColor": "#000",
   "backgroundColor": "white",
   "innerIconStyle": "",
   "spin": false,
   "isAlphaNumericIcon": false,
 }
             )
-            marker_0658aff2ba59a52ad935def32a073fb1.setIcon(beautify_icon_3674f65e81b1802b28b7ae638058279c);
+            marker_85ed4338b7679f4e5d405ddbe48a4c6a.setIcon(beautify_icon_05ba09f02ea45b988d8274f7a93839ce);
         
     
-        var popup_804f5d15b4527dbac8f285e9c5179bc5 = L.popup({
+        var popup_39b6057455ae46ec333055d0809f7a25 = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_094507f1cc2f5048d70c761eddba67cf = $(`<div id="html_094507f1cc2f5048d70c761eddba67cf" style="width: 100.0%; height: 100.0%;">         <b>Kirsikkatie 24, 02450, Kirkkonummi</b><br>         <b>City:</b> Kirkkonummi<br>         <b>Neighborhood:</b> Sundsberg<br>         <b>Postal Code:</b> 02450<br>         <b>Price:</b> €565000<br>         <b>Size:</b> 147.0 m²<br>         <b>Condition:</b> Hyvä<br>         <b>Bedrooms:</b> 6<br>         <b>Maintenance charge:</b> 705,60 € / kk<br>         <b>Capital charge:</b> N/A<br>         <b>Special charge:</b> N/A<br>         <b>Total company charge:</b> 705,60 € / kk<br>         <a href='https://asunnot.oikotie.fi/myytavat-asunnot/kirkkonummi/22775330' target='_blank'>View Listing</a>         </div>`)[0];
-                popup_804f5d15b4527dbac8f285e9c5179bc5.setContent(html_094507f1cc2f5048d70c761eddba67cf);
+                var html_e8c14b9522079171cccd387ef23a2dfb = $(`<div id="html_e8c14b9522079171cccd387ef23a2dfb" style="width: 100.0%; height: 100.0%;">     <b>Saunaniemenkuja 3, 02580, Siuntio</b><br>     <b>City:</b> Siuntio<br>     <b>Neighborhood:</b> Störsvik<br>     <b>Postal Code:</b> 02580<br>     <b>Price:</b> €799000<br>     <b>Size:</b> 221.5 m²<br>     <b>Construction Year:</b> 2005<br>     <b>Condition:</b> Hyvä<br>     <b>Bedrooms:</b> 5<br>     <b>Maintenance charge:</b> nan<br>     <b>Capital charge:</b> nan<br>     <b>Special charge:</b> nan<br>     <b>Total company charge:</b> nan<br>     <a href='https://asunnot.oikotie.fi/myytavat-asunnot/siuntio/21618487' target='_blank'>View Listing</a>     </div>`)[0];
+                popup_39b6057455ae46ec333055d0809f7a25.setContent(html_e8c14b9522079171cccd387ef23a2dfb);
             
         
 
-        marker_0658aff2ba59a52ad935def32a073fb1.bindPopup(popup_804f5d15b4527dbac8f285e9c5179bc5)
+        marker_85ed4338b7679f4e5d405ddbe48a4c6a.bindPopup(popup_39b6057455ae46ec333055d0809f7a25)
         ;
 
         
     
     
-            var marker_1dfff8d9a7b71e2c4548f5602ac8f176 = L.marker(
-                [60.355884504477, 25.090672784495],
+            marker_85ed4338b7679f4e5d405ddbe48a4c6a.bindTooltip(
+                `<div>
+                     
+    <b>Saunaniemenkuja 3, 02580, Siuntio</b><br>
+    <b>Price:</b> €799000<br>
+    <b>Size:</b> 221.5 m²<br>
+    <b>Year:</b> 2005
+    
+                 </div>`,
                 {
+  "sticky": true,
 }
-            ).addTo(map_99723e292e854bf1e04d2551c8a478da);
+            );
         
     
-            var beautify_icon_fcdb0fe1c6040f5911390ef0da55ce0f = new L.BeautifyIcon.icon(
+            var marker_c6f782f23b0c29a63e239fd0adc37a11 = L.marker(
+                [60.080351, 24.288194],
                 {
+}
+            ).addTo(map_236ab17523e2485cbbb60cd0fa2cb111);
+        
+    
+            var beautify_icon_f8dc09f6f49d2ebf426ccc7a2a97defc = new L.BeautifyIcon.icon(
+                {
+  "icon": "house-user",
   "iconShape": "marker",
-  "borderWidth": 5,
-  "borderColor": "#0000FF",
-  "textColor": "white",
+  "borderWidth": 3,
+  "borderColor": "#black",
+  "textColor": "#000",
   "backgroundColor": "white",
   "innerIconStyle": "",
   "spin": false,
   "isAlphaNumericIcon": false,
 }
             )
-            marker_1dfff8d9a7b71e2c4548f5602ac8f176.setIcon(beautify_icon_fcdb0fe1c6040f5911390ef0da55ce0f);
+            marker_c6f782f23b0c29a63e239fd0adc37a11.setIcon(beautify_icon_f8dc09f6f49d2ebf426ccc7a2a97defc);
         
     
-        var popup_419af05482570694ae6a15f15d61a0b6 = L.popup({
+        var popup_8f679fa0ee294500cab150a52850440c = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_082b33bc542c33264f2624711ceeb386 = $(`<div id="html_082b33bc542c33264f2624711ceeb386" style="width: 100.0%; height: 100.0%;">         <b>Villisianpolku 2, 01450, Vantaa</b><br>         <b>City:</b> Vantaa<br>         <b>Neighborhood:</b> Leppäkorpi, Metsola<br>         <b>Postal Code:</b> 01450<br>         <b>Price:</b> €480000<br>         <b>Size:</b> 143.0 m²<br>         <b>Condition:</b> Hyvä<br>         <b>Bedrooms:</b> 6<br>         <b>Maintenance charge:</b> N/A<br>         <b>Capital charge:</b> N/A<br>         <b>Special charge:</b> N/A<br>         <b>Total company charge:</b> N/A<br>         <a href='https://asunnot.oikotie.fi/myytavat-asunnot/vantaa/22726774' target='_blank'>View Listing</a>         </div>`)[0];
-                popup_419af05482570694ae6a15f15d61a0b6.setContent(html_082b33bc542c33264f2624711ceeb386);
+                var html_96a2b0b0809b86e05e3fa30eeda5d291 = $(`<div id="html_96a2b0b0809b86e05e3fa30eeda5d291" style="width: 100.0%; height: 100.0%;">     <b>Mäntykalliontie 7, 02580, Siuntio</b><br>     <b>City:</b> Siuntio<br>     <b>Neighborhood:</b> Pickala, Störsvik<br>     <b>Postal Code:</b> 02580<br>     <b>Price:</b> €616000<br>     <b>Size:</b> 197.1 m²<br>     <b>Construction Year:</b> 2005<br>     <b>Condition:</b> Hyvä<br>     <b>Bedrooms:</b> 6<br>     <b>Maintenance charge:</b> nan<br>     <b>Capital charge:</b> nan<br>     <b>Special charge:</b> nan<br>     <b>Total company charge:</b> nan<br>     <a href='https://asunnot.oikotie.fi/myytavat-asunnot/siuntio/22379096' target='_blank'>View Listing</a>     </div>`)[0];
+                popup_8f679fa0ee294500cab150a52850440c.setContent(html_96a2b0b0809b86e05e3fa30eeda5d291);
             
         
 
-        marker_1dfff8d9a7b71e2c4548f5602ac8f176.bindPopup(popup_419af05482570694ae6a15f15d61a0b6)
+        marker_c6f782f23b0c29a63e239fd0adc37a11.bindPopup(popup_8f679fa0ee294500cab150a52850440c)
         ;
 
         
     
     
-            var marker_272678f55dcea8932b85ccfb42d10701 = L.marker(
+            marker_c6f782f23b0c29a63e239fd0adc37a11.bindTooltip(
+                `<div>
+                     
+    <b>Mäntykalliontie 7, 02580, Siuntio</b><br>
+    <b>Price:</b> €616000<br>
+    <b>Size:</b> 197.1 m²<br>
+    <b>Year:</b> 2005
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_fd03fe6bc7d905d792b39574511eb135 = L.marker(
+                [60.225324, 24.836751],
+                {
+}
+            ).addTo(map_236ab17523e2485cbbb60cd0fa2cb111);
+        
+    
+            var beautify_icon_4068e7deac4656d277a28836076d8e63 = new L.BeautifyIcon.icon(
+                {
+  "icon": "house-user",
+  "iconShape": "marker",
+  "borderWidth": 3,
+  "borderColor": "#black",
+  "textColor": "#000",
+  "backgroundColor": "white",
+  "innerIconStyle": "",
+  "spin": false,
+  "isAlphaNumericIcon": false,
+}
+            )
+            marker_fd03fe6bc7d905d792b39574511eb135.setIcon(beautify_icon_4068e7deac4656d277a28836076d8e63);
+        
+    
+        var popup_65af707d35476466fc678bfa7c74a945 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_36c1d5d1572083065bf59d2510edd583 = $(`<div id="html_36c1d5d1572083065bf59d2510edd583" style="width: 100.0%; height: 100.0%;">     <b>Sotarovastintie 4, 00370, Espoo</b><br>     <b>City:</b> Espoo<br>     <b>Neighborhood:</b> 51 / Mäkkylä, Mäkkylä, Länsi-Helsinki<br>     <b>Postal Code:</b> 00370<br>     <b>Price:</b> €650000<br>     <b>Size:</b> 175.5 m²<br>     <b>Construction Year:</b> 1972<br>     <b>Condition:</b> Tyydyttävä<br>     <b>Bedrooms:</b> 6<br>     <b>Maintenance charge:</b> nan<br>     <b>Capital charge:</b> nan<br>     <b>Special charge:</b> nan<br>     <b>Total company charge:</b> nan<br>     <a href='https://asunnot.oikotie.fi/myytavat-asunnot/espoo/22208881' target='_blank'>View Listing</a>     </div>`)[0];
+                popup_65af707d35476466fc678bfa7c74a945.setContent(html_36c1d5d1572083065bf59d2510edd583);
+            
+        
+
+        marker_fd03fe6bc7d905d792b39574511eb135.bindPopup(popup_65af707d35476466fc678bfa7c74a945)
+        ;
+
+        
+    
+    
+            marker_fd03fe6bc7d905d792b39574511eb135.bindTooltip(
+                `<div>
+                     
+    <b>Sotarovastintie 4, 00370, Espoo</b><br>
+    <b>Price:</b> €650000<br>
+    <b>Size:</b> 175.5 m²<br>
+    <b>Year:</b> 1972
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_61a33a646b1fc9d2e1b6851585f75b09 = L.marker(
+                [60.225324, 24.836751],
+                {
+}
+            ).addTo(map_236ab17523e2485cbbb60cd0fa2cb111);
+        
+    
+            var beautify_icon_c0d1df3850aef7a3abce541ce9ba054a = new L.BeautifyIcon.icon(
+                {
+  "icon": "house-user",
+  "iconShape": "marker",
+  "borderWidth": 3,
+  "borderColor": "#black",
+  "textColor": "#000",
+  "backgroundColor": "white",
+  "innerIconStyle": "",
+  "spin": false,
+  "isAlphaNumericIcon": false,
+}
+            )
+            marker_61a33a646b1fc9d2e1b6851585f75b09.setIcon(beautify_icon_c0d1df3850aef7a3abce541ce9ba054a);
+        
+    
+        var popup_01f699a32d04094d6eed0dae7dba2423 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_48736038bc48cc002088d55cbb8af76f = $(`<div id="html_48736038bc48cc002088d55cbb8af76f" style="width: 100.0%; height: 100.0%;">     <b>Sotarovastintie 4, 00370, Espoo</b><br>     <b>City:</b> Espoo<br>     <b>Neighborhood:</b> 51 / Mäkkylä, Mäkkylä, Länsi-Helsinki<br>     <b>Postal Code:</b> 00370<br>     <b>Price:</b> €650000<br>     <b>Size:</b> 175.5 m²<br>     <b>Construction Year:</b> 1972<br>     <b>Condition:</b> Tyydyttävä<br>     <b>Bedrooms:</b> 6<br>     <b>Maintenance charge:</b> nan<br>     <b>Capital charge:</b> nan<br>     <b>Special charge:</b> nan<br>     <b>Total company charge:</b> nan<br>     <a href='https://asunnot.oikotie.fi/myytavat-asunnot/espoo/22208881' target='_blank'>View Listing</a>     </div>`)[0];
+                popup_01f699a32d04094d6eed0dae7dba2423.setContent(html_48736038bc48cc002088d55cbb8af76f);
+            
+        
+
+        marker_61a33a646b1fc9d2e1b6851585f75b09.bindPopup(popup_01f699a32d04094d6eed0dae7dba2423)
+        ;
+
+        
+    
+    
+            marker_61a33a646b1fc9d2e1b6851585f75b09.bindTooltip(
+                `<div>
+                     
+    <b>Sotarovastintie 4, 00370, Espoo</b><br>
+    <b>Price:</b> €650000<br>
+    <b>Size:</b> 175.5 m²<br>
+    <b>Year:</b> 1972
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_f67ff0d77497127e208f4c6dc076832e = L.marker(
+                [60.071037, 24.297558],
+                {
+}
+            ).addTo(map_236ab17523e2485cbbb60cd0fa2cb111);
+        
+    
+            var beautify_icon_49681950316b60f9514ca6024c984973 = new L.BeautifyIcon.icon(
+                {
+  "icon": "house-user",
+  "iconShape": "marker",
+  "borderWidth": 3,
+  "borderColor": "#black",
+  "textColor": "#000",
+  "backgroundColor": "white",
+  "innerIconStyle": "",
+  "spin": false,
+  "isAlphaNumericIcon": false,
+}
+            )
+            marker_f67ff0d77497127e208f4c6dc076832e.setIcon(beautify_icon_49681950316b60f9514ca6024c984973);
+        
+    
+        var popup_703e56740b10cdb75d02173934d0c49e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_68450b99626fa9e3a3a83be7a58c8d54 = $(`<div id="html_68450b99626fa9e3a3a83be7a58c8d54" style="width: 100.0%; height: 100.0%;">     <b>Saunaniemenkuja 3, 02580, Siuntio</b><br>     <b>City:</b> Siuntio<br>     <b>Neighborhood:</b> Störsvik<br>     <b>Postal Code:</b> 02580<br>     <b>Price:</b> €799000<br>     <b>Size:</b> 221.5 m²<br>     <b>Construction Year:</b> 2005<br>     <b>Condition:</b> Hyvä<br>     <b>Bedrooms:</b> 5<br>     <b>Maintenance charge:</b> nan<br>     <b>Capital charge:</b> nan<br>     <b>Special charge:</b> nan<br>     <b>Total company charge:</b> nan<br>     <a href='https://asunnot.oikotie.fi/myytavat-asunnot/siuntio/21618487' target='_blank'>View Listing</a>     </div>`)[0];
+                popup_703e56740b10cdb75d02173934d0c49e.setContent(html_68450b99626fa9e3a3a83be7a58c8d54);
+            
+        
+
+        marker_f67ff0d77497127e208f4c6dc076832e.bindPopup(popup_703e56740b10cdb75d02173934d0c49e)
+        ;
+
+        
+    
+    
+            marker_f67ff0d77497127e208f4c6dc076832e.bindTooltip(
+                `<div>
+                     
+    <b>Saunaniemenkuja 3, 02580, Siuntio</b><br>
+    <b>Price:</b> €799000<br>
+    <b>Size:</b> 221.5 m²<br>
+    <b>Year:</b> 2005
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_778e96371828077f2dde76e628014340 = L.marker(
+                [60.080351, 24.288194],
+                {
+}
+            ).addTo(map_236ab17523e2485cbbb60cd0fa2cb111);
+        
+    
+            var beautify_icon_a505e5d4cf0386f1b19af8c49e3b304f = new L.BeautifyIcon.icon(
+                {
+  "icon": "house-user",
+  "iconShape": "marker",
+  "borderWidth": 3,
+  "borderColor": "#black",
+  "textColor": "#000",
+  "backgroundColor": "white",
+  "innerIconStyle": "",
+  "spin": false,
+  "isAlphaNumericIcon": false,
+}
+            )
+            marker_778e96371828077f2dde76e628014340.setIcon(beautify_icon_a505e5d4cf0386f1b19af8c49e3b304f);
+        
+    
+        var popup_27a556209ffc9e26f5e4c91da2357438 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_563004e3dc6c7de1a3e4b611620778e9 = $(`<div id="html_563004e3dc6c7de1a3e4b611620778e9" style="width: 100.0%; height: 100.0%;">     <b>Mäntykalliontie 7, 02580, Siuntio</b><br>     <b>City:</b> Siuntio<br>     <b>Neighborhood:</b> Pickala, Störsvik<br>     <b>Postal Code:</b> 02580<br>     <b>Price:</b> €616000<br>     <b>Size:</b> 197.1 m²<br>     <b>Construction Year:</b> 2005<br>     <b>Condition:</b> Hyvä<br>     <b>Bedrooms:</b> 6<br>     <b>Maintenance charge:</b> nan<br>     <b>Capital charge:</b> nan<br>     <b>Special charge:</b> nan<br>     <b>Total company charge:</b> nan<br>     <a href='https://asunnot.oikotie.fi/myytavat-asunnot/siuntio/22379096' target='_blank'>View Listing</a>     </div>`)[0];
+                popup_27a556209ffc9e26f5e4c91da2357438.setContent(html_563004e3dc6c7de1a3e4b611620778e9);
+            
+        
+
+        marker_778e96371828077f2dde76e628014340.bindPopup(popup_27a556209ffc9e26f5e4c91da2357438)
+        ;
+
+        
+    
+    
+            marker_778e96371828077f2dde76e628014340.bindTooltip(
+                `<div>
+                     
+    <b>Mäntykalliontie 7, 02580, Siuntio</b><br>
+    <b>Price:</b> €616000<br>
+    <b>Size:</b> 197.1 m²<br>
+    <b>Year:</b> 2005
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_d8348ef7e32e002dc603848c9e4977fa = L.marker(
                 [60.179793, 24.658142],
                 {
 }
-            ).addTo(map_99723e292e854bf1e04d2551c8a478da);
+            ).addTo(map_236ab17523e2485cbbb60cd0fa2cb111);
         
     
-            var beautify_icon_7df1d082ab2e4a72a28be5ecc6b7dbb7 = new L.BeautifyIcon.icon(
+            var beautify_icon_0255d78dcda5c8927ac82ebeb8f8cb4e = new L.BeautifyIcon.icon(
                 {
+  "icon": NaN,
   "iconShape": "marker",
-  "borderWidth": 5,
-  "borderColor": "#0000FF",
-  "textColor": "white",
+  "borderWidth": 3,
+  "borderColor": "#black",
+  "textColor": "#000",
   "backgroundColor": "white",
   "innerIconStyle": "",
   "spin": false,
   "isAlphaNumericIcon": false,
 }
             )
-            marker_272678f55dcea8932b85ccfb42d10701.setIcon(beautify_icon_7df1d082ab2e4a72a28be5ecc6b7dbb7);
+            marker_d8348ef7e32e002dc603848c9e4977fa.setIcon(beautify_icon_0255d78dcda5c8927ac82ebeb8f8cb4e);
         
     
-        var popup_c7effbee0a2fba777f0528343c6456c6 = L.popup({
+        var popup_8fb9682c958398beedb16f6a49f80f1e = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_0f5d144f1404c3b12f0894dcecd79a87 = $(`<div id="html_0f5d144f1404c3b12f0894dcecd79a87" style="width: 100.0%; height: 100.0%;">         <b>Kulolaakso 14, 02340, Espoo</b><br>         <b>City:</b> Espoo<br>         <b>Neighborhood:</b> Latokaski<br>         <b>Postal Code:</b> 02340<br>         <b>Price:</b> €579000<br>         <b>Size:</b> 163.0 m²<br>         <b>Condition:</b> Hyvä<br>         <b>Bedrooms:</b> 5<br>         <b>Maintenance charge:</b> N/A<br>         <b>Capital charge:</b> N/A<br>         <b>Special charge:</b> N/A<br>         <b>Total company charge:</b> N/A<br>         <a href='https://asunnot.oikotie.fi/myytavat-asunnot/espoo/21747724' target='_blank'>View Listing</a>         </div>`)[0];
-                popup_c7effbee0a2fba777f0528343c6456c6.setContent(html_0f5d144f1404c3b12f0894dcecd79a87);
+                var html_1a12b175a77adf442884efecc7b11691 = $(`<div id="html_1a12b175a77adf442884efecc7b11691" style="width: 100.0%; height: 100.0%;">     <b>Kulolaakso 14, 02340, Espoo</b><br>     <b>City:</b> Espoo<br>     <b>Neighborhood:</b> Latokaski<br>     <b>Postal Code:</b> 02340<br>     <b>Price:</b> €579000<br>     <b>Size:</b> 163.0 m²<br>     <b>Construction Year:</b> 2007<br>     <b>Condition:</b> Hyvä<br>     <b>Bedrooms:</b> 5<br>     <b>Maintenance charge:</b> nan<br>     <b>Capital charge:</b> nan<br>     <b>Special charge:</b> nan<br>     <b>Total company charge:</b> nan<br>     <a href='https://asunnot.oikotie.fi/myytavat-asunnot/espoo/21747724' target='_blank'>View Listing</a>     </div>`)[0];
+                popup_8fb9682c958398beedb16f6a49f80f1e.setContent(html_1a12b175a77adf442884efecc7b11691);
             
         
 
-        marker_272678f55dcea8932b85ccfb42d10701.bindPopup(popup_c7effbee0a2fba777f0528343c6456c6)
+        marker_d8348ef7e32e002dc603848c9e4977fa.bindPopup(popup_8fb9682c958398beedb16f6a49f80f1e)
         ;
 
         
     
     
-            var marker_ece5d5ef50d9048f2413372d00410660 = L.marker(
+            marker_d8348ef7e32e002dc603848c9e4977fa.bindTooltip(
+                `<div>
+                     
+    <b>Kulolaakso 14, 02340, Espoo</b><br>
+    <b>Price:</b> €579000<br>
+    <b>Size:</b> 163.0 m²<br>
+    <b>Year:</b> 2007
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_001b89cee764a6b52f75a37b84006c4a = L.marker(
+                [60.28669, 24.84547],
+                {
+}
+            ).addTo(map_236ab17523e2485cbbb60cd0fa2cb111);
+        
+    
+            var beautify_icon_5be71da3d72cffbd8210f2f0d90d53d0 = new L.BeautifyIcon.icon(
+                {
+  "icon": NaN,
+  "iconShape": "marker",
+  "borderWidth": 3,
+  "borderColor": "#black",
+  "textColor": "#000",
+  "backgroundColor": "white",
+  "innerIconStyle": "",
+  "spin": false,
+  "isAlphaNumericIcon": false,
+}
+            )
+            marker_001b89cee764a6b52f75a37b84006c4a.setIcon(beautify_icon_5be71da3d72cffbd8210f2f0d90d53d0);
+        
+    
+        var popup_dbdcef8127e5b336b8076e17fd8dfd5c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c6a2e1b0486ab7d8b0ffc2c38607f90c = $(`<div id="html_c6a2e1b0486ab7d8b0ffc2c38607f90c" style="width: 100.0%; height: 100.0%;">     <b>Monsaksenkuja 9, 01620, Vantaa</b><br>     <b>City:</b> Vantaa<br>     <b>Neighborhood:</b> Martinlaakso<br>     <b>Postal Code:</b> 01620<br>     <b>Price:</b> €640000<br>     <b>Size:</b> 295.0 m²<br>     <b>Construction Year:</b> 1982<br>     <b>Condition:</b> Hyvä<br>     <b>Bedrooms:</b> 6<br>     <b>Maintenance charge:</b> nan<br>     <b>Capital charge:</b> nan<br>     <b>Special charge:</b> nan<br>     <b>Total company charge:</b> 0 € / kk<br>     <a href='https://asunnot.oikotie.fi/myytavat-asunnot/vantaa/22490946' target='_blank'>View Listing</a>     </div>`)[0];
+                popup_dbdcef8127e5b336b8076e17fd8dfd5c.setContent(html_c6a2e1b0486ab7d8b0ffc2c38607f90c);
+            
+        
+
+        marker_001b89cee764a6b52f75a37b84006c4a.bindPopup(popup_dbdcef8127e5b336b8076e17fd8dfd5c)
+        ;
+
+        
+    
+    
+            marker_001b89cee764a6b52f75a37b84006c4a.bindTooltip(
+                `<div>
+                     
+    <b>Monsaksenkuja 9, 01620, Vantaa</b><br>
+    <b>Price:</b> €640000<br>
+    <b>Size:</b> 295.0 m²<br>
+    <b>Year:</b> 1982
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_6c8ca70c6d3247b6323e9a9c000b26c6 = L.marker(
+                [60.29985, 25.045569],
+                {
+}
+            ).addTo(map_236ab17523e2485cbbb60cd0fa2cb111);
+        
+    
+            var beautify_icon_ba9c340ac81c4950414988a0c165cdbe = new L.BeautifyIcon.icon(
+                {
+  "icon": NaN,
+  "iconShape": "marker",
+  "borderWidth": 3,
+  "borderColor": "#black",
+  "textColor": "#000",
+  "backgroundColor": "white",
+  "innerIconStyle": "",
+  "spin": false,
+  "isAlphaNumericIcon": false,
+}
+            )
+            marker_6c8ca70c6d3247b6323e9a9c000b26c6.setIcon(beautify_icon_ba9c340ac81c4950414988a0c165cdbe);
+        
+    
+        var popup_3164595e19237dd2c3cdec0c31becb90 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_941ff3bc7cf04e124c4f8555146da49b = $(`<div id="html_941ff3bc7cf04e124c4f8555146da49b" style="width: 100.0%; height: 100.0%;">     <b>Kohokkitie 6, 01300, Vantaa</b><br>     <b>City:</b> Vantaa<br>     <b>Neighborhood:</b> Tikkurila, Hiekkaharju<br>     <b>Postal Code:</b> 01300<br>     <b>Price:</b> €498000<br>     <b>Size:</b> 123.0 m²<br>     <b>Construction Year:</b> 2019<br>     <b>Condition:</b> Hyvä<br>     <b>Bedrooms:</b> 5<br>     <b>Maintenance charge:</b> 90 € / kk<br>     <b>Capital charge:</b> nan<br>     <b>Special charge:</b> nan<br>     <b>Total company charge:</b> 90 € / kk<br>     <a href='https://asunnot.oikotie.fi/myytavat-asunnot/vantaa/22294609' target='_blank'>View Listing</a>     </div>`)[0];
+                popup_3164595e19237dd2c3cdec0c31becb90.setContent(html_941ff3bc7cf04e124c4f8555146da49b);
+            
+        
+
+        marker_6c8ca70c6d3247b6323e9a9c000b26c6.bindPopup(popup_3164595e19237dd2c3cdec0c31becb90)
+        ;
+
+        
+    
+    
+            marker_6c8ca70c6d3247b6323e9a9c000b26c6.bindTooltip(
+                `<div>
+                     
+    <b>Kohokkitie 6, 01300, Vantaa</b><br>
+    <b>Price:</b> €498000<br>
+    <b>Size:</b> 123.0 m²<br>
+    <b>Year:</b> 2019
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_f72bda336995adc67d0412ab827647e7 = L.marker(
+                [60.169074, 24.68879],
+                {
+}
+            ).addTo(map_236ab17523e2485cbbb60cd0fa2cb111);
+        
+    
+            var beautify_icon_9a40a9a85e41521dd5d70b492f57266c = new L.BeautifyIcon.icon(
+                {
+  "icon": NaN,
+  "iconShape": "marker",
+  "borderWidth": 3,
+  "borderColor": "#black",
+  "textColor": "#000",
+  "backgroundColor": "white",
+  "innerIconStyle": "",
+  "spin": false,
+  "isAlphaNumericIcon": false,
+}
+            )
+            marker_f72bda336995adc67d0412ab827647e7.setIcon(beautify_icon_9a40a9a85e41521dd5d70b492f57266c);
+        
+    
+        var popup_760112e45a061a29394116162c925c2c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_245b389514371b42b0ae33f6225bbb5f = $(`<div id="html_245b389514371b42b0ae33f6225bbb5f" style="width: 100.0%; height: 100.0%;">     <b>Eestinmalmi 12, 02280, Espoo</b><br>     <b>City:</b> Espoo<br>     <b>Neighborhood:</b> Eestinmalmi, Nöykkiö<br>     <b>Postal Code:</b> 02280<br>     <b>Price:</b> €618000<br>     <b>Size:</b> 143.0 m²<br>     <b>Construction Year:</b> 2018<br>     <b>Condition:</b> Hyvä<br>     <b>Bedrooms:</b> 5<br>     <b>Maintenance charge:</b> 362,50 € / kk<br>     <b>Capital charge:</b> nan<br>     <b>Special charge:</b> nan<br>     <b>Total company charge:</b> 362,50 € / kk<br>     <a href='https://asunnot.oikotie.fi/myytavat-asunnot/espoo/22696126' target='_blank'>View Listing</a>     </div>`)[0];
+                popup_760112e45a061a29394116162c925c2c.setContent(html_245b389514371b42b0ae33f6225bbb5f);
+            
+        
+
+        marker_f72bda336995adc67d0412ab827647e7.bindPopup(popup_760112e45a061a29394116162c925c2c)
+        ;
+
+        
+    
+    
+            marker_f72bda336995adc67d0412ab827647e7.bindTooltip(
+                `<div>
+                     
+    <b>Eestinmalmi 12, 02280, Espoo</b><br>
+    <b>Price:</b> €618000<br>
+    <b>Size:</b> 143.0 m²<br>
+    <b>Year:</b> 2018
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_8f4e4ba0381c7f856b91fd7502738d4b = L.marker(
+                [60.071037, 24.297558],
+                {
+}
+            ).addTo(map_236ab17523e2485cbbb60cd0fa2cb111);
+        
+    
+            var beautify_icon_6a9792e3bb30d3a794f2005ec8d2ebb1 = new L.BeautifyIcon.icon(
+                {
+  "icon": "home",
+  "iconShape": "marker",
+  "borderWidth": 3,
+  "borderColor": "#black",
+  "textColor": "#000",
+  "backgroundColor": "white",
+  "innerIconStyle": "",
+  "spin": false,
+  "isAlphaNumericIcon": false,
+}
+            )
+            marker_8f4e4ba0381c7f856b91fd7502738d4b.setIcon(beautify_icon_6a9792e3bb30d3a794f2005ec8d2ebb1);
+        
+    
+        var popup_43683dd5effa5d0d15c92c2fa9f327f3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a863f8cd4ca6178d0a4331b638a936c1 = $(`<div id="html_a863f8cd4ca6178d0a4331b638a936c1" style="width: 100.0%; height: 100.0%;">     <b>Saunaniemenkuja 3, 02580, Siuntio</b><br>     <b>City:</b> Siuntio<br>     <b>Neighborhood:</b> Störsvik<br>     <b>Postal Code:</b> 02580<br>     <b>Price:</b> €799000<br>     <b>Size:</b> 221.5 m²<br>     <b>Construction Year:</b> 2005<br>     <b>Condition:</b> Hyvä<br>     <b>Bedrooms:</b> 5<br>     <b>Maintenance charge:</b> nan<br>     <b>Capital charge:</b> nan<br>     <b>Special charge:</b> nan<br>     <b>Total company charge:</b> nan<br>     <a href='https://asunnot.oikotie.fi/myytavat-asunnot/siuntio/21618487' target='_blank'>View Listing</a>     </div>`)[0];
+                popup_43683dd5effa5d0d15c92c2fa9f327f3.setContent(html_a863f8cd4ca6178d0a4331b638a936c1);
+            
+        
+
+        marker_8f4e4ba0381c7f856b91fd7502738d4b.bindPopup(popup_43683dd5effa5d0d15c92c2fa9f327f3)
+        ;
+
+        
+    
+    
+            marker_8f4e4ba0381c7f856b91fd7502738d4b.bindTooltip(
+                `<div>
+                     
+    <b>Saunaniemenkuja 3, 02580, Siuntio</b><br>
+    <b>Price:</b> €799000<br>
+    <b>Size:</b> 221.5 m²<br>
+    <b>Year:</b> 2005
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_db82e428b3002af37582e0c1508c6bf3 = L.marker(
+                [60.190863, 24.61959],
+                {
+}
+            ).addTo(map_236ab17523e2485cbbb60cd0fa2cb111);
+        
+    
+            var beautify_icon_91b33a5ec1c2d9bdab4256b0bf7012a5 = new L.BeautifyIcon.icon(
+                {
+  "icon": NaN,
+  "iconShape": "marker",
+  "borderWidth": 3,
+  "borderColor": "#black",
+  "textColor": "#000",
+  "backgroundColor": "white",
+  "innerIconStyle": "",
+  "spin": false,
+  "isAlphaNumericIcon": false,
+}
+            )
+            marker_db82e428b3002af37582e0c1508c6bf3.setIcon(beautify_icon_91b33a5ec1c2d9bdab4256b0bf7012a5);
+        
+    
+        var popup_003ea2f5a735d121807432a3b0decd4c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b3346f84a6491852de581cf88f0e3dd0 = $(`<div id="html_b3346f84a6491852de581cf88f0e3dd0" style="width: 100.0%; height: 100.0%;">     <b>Satulamaakarintie 12, 02780, Espoo</b><br>     <b>City:</b> Espoo<br>     <b>Neighborhood:</b> Vanttila<br>     <b>Postal Code:</b> 02780<br>     <b>Price:</b> €529000<br>     <b>Size:</b> 170.0 m²<br>     <b>Construction Year:</b> 2002<br>     <b>Condition:</b> Hyvä<br>     <b>Bedrooms:</b> 6<br>     <b>Maintenance charge:</b> nan<br>     <b>Capital charge:</b> nan<br>     <b>Special charge:</b> nan<br>     <b>Total company charge:</b> nan<br>     <a href='https://asunnot.oikotie.fi/myytavat-asunnot/espoo/22100228' target='_blank'>View Listing</a>     </div>`)[0];
+                popup_003ea2f5a735d121807432a3b0decd4c.setContent(html_b3346f84a6491852de581cf88f0e3dd0);
+            
+        
+
+        marker_db82e428b3002af37582e0c1508c6bf3.bindPopup(popup_003ea2f5a735d121807432a3b0decd4c)
+        ;
+
+        
+    
+    
+            marker_db82e428b3002af37582e0c1508c6bf3.bindTooltip(
+                `<div>
+                     
+    <b>Satulamaakarintie 12, 02780, Espoo</b><br>
+    <b>Price:</b> €529000<br>
+    <b>Size:</b> 170.0 m²<br>
+    <b>Year:</b> 2002
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_93a52e61f78bd7f38a00e29c12822f05 = L.marker(
+                [60.355885, 25.090673],
+                {
+}
+            ).addTo(map_236ab17523e2485cbbb60cd0fa2cb111);
+        
+    
+            var beautify_icon_e0f4c5f7dd4f7aab87aeeb00daaaca6f = new L.BeautifyIcon.icon(
+                {
+  "icon": NaN,
+  "iconShape": "marker",
+  "borderWidth": 3,
+  "borderColor": "#black",
+  "textColor": "#000",
+  "backgroundColor": "white",
+  "innerIconStyle": "",
+  "spin": false,
+  "isAlphaNumericIcon": false,
+}
+            )
+            marker_93a52e61f78bd7f38a00e29c12822f05.setIcon(beautify_icon_e0f4c5f7dd4f7aab87aeeb00daaaca6f);
+        
+    
+        var popup_c1c5c068cbc3ab590b4ee1e174e5a186 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c9159ade590e0455902068de933bc7d2 = $(`<div id="html_c9159ade590e0455902068de933bc7d2" style="width: 100.0%; height: 100.0%;">     <b>Villisianpolku 2, 01450, Vantaa</b><br>     <b>City:</b> Vantaa<br>     <b>Neighborhood:</b> Leppäkorpi, Metsola<br>     <b>Postal Code:</b> 01450<br>     <b>Price:</b> €480000<br>     <b>Size:</b> 143.0 m²<br>     <b>Construction Year:</b> 2003<br>     <b>Condition:</b> Hyvä<br>     <b>Bedrooms:</b> 6<br>     <b>Maintenance charge:</b> nan<br>     <b>Capital charge:</b> nan<br>     <b>Special charge:</b> nan<br>     <b>Total company charge:</b> nan<br>     <a href='https://asunnot.oikotie.fi/myytavat-asunnot/vantaa/22726774' target='_blank'>View Listing</a>     </div>`)[0];
+                popup_c1c5c068cbc3ab590b4ee1e174e5a186.setContent(html_c9159ade590e0455902068de933bc7d2);
+            
+        
+
+        marker_93a52e61f78bd7f38a00e29c12822f05.bindPopup(popup_c1c5c068cbc3ab590b4ee1e174e5a186)
+        ;
+
+        
+    
+    
+            marker_93a52e61f78bd7f38a00e29c12822f05.bindTooltip(
+                `<div>
+                     
+    <b>Villisianpolku 2, 01450, Vantaa</b><br>
+    <b>Price:</b> €480000<br>
+    <b>Size:</b> 143.0 m²<br>
+    <b>Year:</b> 2003
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_3ac4dc44247cb3dbbc444258c3d73b18 = L.marker(
+                [60.225324, 24.836751],
+                {
+}
+            ).addTo(map_236ab17523e2485cbbb60cd0fa2cb111);
+        
+    
+            var beautify_icon_d07816b83dbfef175d2c995aef16ba5a = new L.BeautifyIcon.icon(
+                {
+  "icon": "home",
+  "iconShape": "marker",
+  "borderWidth": 3,
+  "borderColor": "#black",
+  "textColor": "#000",
+  "backgroundColor": "white",
+  "innerIconStyle": "",
+  "spin": false,
+  "isAlphaNumericIcon": false,
+}
+            )
+            marker_3ac4dc44247cb3dbbc444258c3d73b18.setIcon(beautify_icon_d07816b83dbfef175d2c995aef16ba5a);
+        
+    
+        var popup_f0060ff96d80a1a46230295b1301116d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_11b5713c44878c3d87731f6aa5731a0b = $(`<div id="html_11b5713c44878c3d87731f6aa5731a0b" style="width: 100.0%; height: 100.0%;">     <b>Sotarovastintie 4, 00370, Espoo</b><br>     <b>City:</b> Espoo<br>     <b>Neighborhood:</b> 51 / Mäkkylä, Mäkkylä, Länsi-Helsinki<br>     <b>Postal Code:</b> 00370<br>     <b>Price:</b> €650000<br>     <b>Size:</b> 175.5 m²<br>     <b>Construction Year:</b> 1972<br>     <b>Condition:</b> Tyydyttävä<br>     <b>Bedrooms:</b> 6<br>     <b>Maintenance charge:</b> nan<br>     <b>Capital charge:</b> nan<br>     <b>Special charge:</b> nan<br>     <b>Total company charge:</b> nan<br>     <a href='https://asunnot.oikotie.fi/myytavat-asunnot/espoo/22208881' target='_blank'>View Listing</a>     </div>`)[0];
+                popup_f0060ff96d80a1a46230295b1301116d.setContent(html_11b5713c44878c3d87731f6aa5731a0b);
+            
+        
+
+        marker_3ac4dc44247cb3dbbc444258c3d73b18.bindPopup(popup_f0060ff96d80a1a46230295b1301116d)
+        ;
+
+        
+    
+    
+            marker_3ac4dc44247cb3dbbc444258c3d73b18.bindTooltip(
+                `<div>
+                     
+    <b>Sotarovastintie 4, 00370, Espoo</b><br>
+    <b>Price:</b> €650000<br>
+    <b>Size:</b> 175.5 m²<br>
+    <b>Year:</b> 1972
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_1c0889bc5cc0c0bfe152492354067e01 = L.marker(
+                [60.080351, 24.288194],
+                {
+}
+            ).addTo(map_236ab17523e2485cbbb60cd0fa2cb111);
+        
+    
+            var beautify_icon_2633470d19e802d19f04add2b9234317 = new L.BeautifyIcon.icon(
+                {
+  "icon": "home",
+  "iconShape": "marker",
+  "borderWidth": 3,
+  "borderColor": "#black",
+  "textColor": "#000",
+  "backgroundColor": "white",
+  "innerIconStyle": "",
+  "spin": false,
+  "isAlphaNumericIcon": false,
+}
+            )
+            marker_1c0889bc5cc0c0bfe152492354067e01.setIcon(beautify_icon_2633470d19e802d19f04add2b9234317);
+        
+    
+        var popup_ccf3a5e791fb58d1d43d3b70063af00e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e5e016a9e6ae5fa00b4808d45f86e24c = $(`<div id="html_e5e016a9e6ae5fa00b4808d45f86e24c" style="width: 100.0%; height: 100.0%;">     <b>Mäntykalliontie 7, 02580, Siuntio</b><br>     <b>City:</b> Siuntio<br>     <b>Neighborhood:</b> Pickala, Störsvik<br>     <b>Postal Code:</b> 02580<br>     <b>Price:</b> €616000<br>     <b>Size:</b> 197.1 m²<br>     <b>Construction Year:</b> 2005<br>     <b>Condition:</b> Hyvä<br>     <b>Bedrooms:</b> 6<br>     <b>Maintenance charge:</b> nan<br>     <b>Capital charge:</b> nan<br>     <b>Special charge:</b> nan<br>     <b>Total company charge:</b> nan<br>     <a href='https://asunnot.oikotie.fi/myytavat-asunnot/siuntio/22379096' target='_blank'>View Listing</a>     </div>`)[0];
+                popup_ccf3a5e791fb58d1d43d3b70063af00e.setContent(html_e5e016a9e6ae5fa00b4808d45f86e24c);
+            
+        
+
+        marker_1c0889bc5cc0c0bfe152492354067e01.bindPopup(popup_ccf3a5e791fb58d1d43d3b70063af00e)
+        ;
+
+        
+    
+    
+            marker_1c0889bc5cc0c0bfe152492354067e01.bindTooltip(
+                `<div>
+                     
+    <b>Mäntykalliontie 7, 02580, Siuntio</b><br>
+    <b>Price:</b> €616000<br>
+    <b>Size:</b> 197.1 m²<br>
+    <b>Year:</b> 2005
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_218d8a747e8574855363b964c69b8da9 = L.marker(
+                [60.236416, 24.747348],
+                {
+}
+            ).addTo(map_236ab17523e2485cbbb60cd0fa2cb111);
+        
+    
+            var beautify_icon_d6b903f7fbe1578414230726f701c28b = new L.BeautifyIcon.icon(
+                {
+  "icon": NaN,
+  "iconShape": "marker",
+  "borderWidth": 3,
+  "borderColor": "#black",
+  "textColor": "#000",
+  "backgroundColor": "white",
+  "innerIconStyle": "",
+  "spin": false,
+  "isAlphaNumericIcon": false,
+}
+            )
+            marker_218d8a747e8574855363b964c69b8da9.setIcon(beautify_icon_d6b903f7fbe1578414230726f701c28b);
+        
+    
+        var popup_670eb59e7ae4a2dd8bac47a597dd6a82 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3d790a0e54050aa717cfeea13c01ca7e = $(`<div id="html_3d790a0e54050aa717cfeea13c01ca7e" style="width: 100.0%; height: 100.0%;">     <b>Hirsikalliontie 10, 02710, Espoo</b><br>     <b>City:</b> Espoo<br>     <b>Neighborhood:</b> Laaksolahti<br>     <b>Postal Code:</b> 02710<br>     <b>Price:</b> €658000<br>     <b>Size:</b> 152.0 m²<br>     <b>Construction Year:</b> 2025<br>     <b>Condition:</b> Uusi<br>     <b>Bedrooms:</b> 5<br>     <b>Maintenance charge:</b> nan<br>     <b>Capital charge:</b> nan<br>     <b>Special charge:</b> nan<br>     <b>Total company charge:</b> nan<br>     <a href='https://asunnot.oikotie.fi/myytavat-asunnot/espoo/22747254' target='_blank'>View Listing</a>     </div>`)[0];
+                popup_670eb59e7ae4a2dd8bac47a597dd6a82.setContent(html_3d790a0e54050aa717cfeea13c01ca7e);
+            
+        
+
+        marker_218d8a747e8574855363b964c69b8da9.bindPopup(popup_670eb59e7ae4a2dd8bac47a597dd6a82)
+        ;
+
+        
+    
+    
+            marker_218d8a747e8574855363b964c69b8da9.bindTooltip(
+                `<div>
+                     
+    <b>Hirsikalliontie 10, 02710, Espoo</b><br>
+    <b>Price:</b> €658000<br>
+    <b>Size:</b> 152.0 m²<br>
+    <b>Year:</b> 2025
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_4449d25648cc0580f3d545705d46a493 = L.marker(
+                [60.172264, 24.62887],
+                {
+}
+            ).addTo(map_236ab17523e2485cbbb60cd0fa2cb111);
+        
+    
+            var beautify_icon_e9c342a02549c55f250d7aae22eb3e8b = new L.BeautifyIcon.icon(
+                {
+  "icon": NaN,
+  "iconShape": "marker",
+  "borderWidth": 3,
+  "borderColor": "#black",
+  "textColor": "#000",
+  "backgroundColor": "white",
+  "innerIconStyle": "",
+  "spin": false,
+  "isAlphaNumericIcon": false,
+}
+            )
+            marker_4449d25648cc0580f3d545705d46a493.setIcon(beautify_icon_e9c342a02549c55f250d7aae22eb3e8b);
+        
+    
+        var popup_e5dc799089615f88f211a9be1e29b128 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f8c4ad3ebac2cf9a051b839066f1a974 = $(`<div id="html_f8c4ad3ebac2cf9a051b839066f1a974" style="width: 100.0%; height: 100.0%;">     <b>Vuoriharjuntie 10, 02330, Espoo</b><br>     <b>City:</b> Espoo<br>     <b>Neighborhood:</b> Tillinmäki, Saunalahti<br>     <b>Postal Code:</b> 02330<br>     <b>Price:</b> €498000<br>     <b>Size:</b> 126.0 m²<br>     <b>Construction Year:</b> 2011<br>     <b>Condition:</b> Hyvä<br>     <b>Bedrooms:</b> 5<br>     <b>Maintenance charge:</b> 491,40 € / kk<br>     <b>Capital charge:</b> 341,10 € / kk<br>     <b>Special charge:</b> nan<br>     <b>Total company charge:</b> 832,50 € / kk<br>     <a href='https://asunnot.oikotie.fi/myytavat-asunnot/espoo/22640475' target='_blank'>View Listing</a>     </div>`)[0];
+                popup_e5dc799089615f88f211a9be1e29b128.setContent(html_f8c4ad3ebac2cf9a051b839066f1a974);
+            
+        
+
+        marker_4449d25648cc0580f3d545705d46a493.bindPopup(popup_e5dc799089615f88f211a9be1e29b128)
+        ;
+
+        
+    
+    
+            marker_4449d25648cc0580f3d545705d46a493.bindTooltip(
+                `<div>
+                     
+    <b>Vuoriharjuntie 10, 02330, Espoo</b><br>
+    <b>Price:</b> €498000<br>
+    <b>Size:</b> 126.0 m²<br>
+    <b>Year:</b> 2011
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_14065416c43a82940dd7233b799eedb4 = L.marker(
+                [60.158618, 24.549248],
+                {
+}
+            ).addTo(map_236ab17523e2485cbbb60cd0fa2cb111);
+        
+    
+            var beautify_icon_f8093d10d5b9948429e37ee9bbebf95b = new L.BeautifyIcon.icon(
+                {
+  "icon": "home",
+  "iconShape": "marker",
+  "borderWidth": 3,
+  "borderColor": "#black",
+  "textColor": "#000",
+  "backgroundColor": "white",
+  "innerIconStyle": "",
+  "spin": false,
+  "isAlphaNumericIcon": false,
+}
+            )
+            marker_14065416c43a82940dd7233b799eedb4.setIcon(beautify_icon_f8093d10d5b9948429e37ee9bbebf95b);
+        
+    
+        var popup_f449c004965fc6d61007a3c5301b71c1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7d031abb0e27971d77de3d7081c5348b = $(`<div id="html_7d031abb0e27971d77de3d7081c5348b" style="width: 100.0%; height: 100.0%;">     <b>Kirsikkatie 24, 02450, Kirkkonummi</b><br>     <b>City:</b> Kirkkonummi<br>     <b>Neighborhood:</b> Sundsberg<br>     <b>Postal Code:</b> 02450<br>     <b>Price:</b> €565000<br>     <b>Size:</b> 147 m²<br>     <b>Construction Year:</b> 2005<br>     <b>Condition:</b> Hyvä<br>     <b>Bedrooms:</b> 6<br>     <b>Maintenance charge:</b> 705,60 € / kk<br>     <b>Capital charge:</b> nan<br>     <b>Special charge:</b> nan<br>     <b>Total company charge:</b> 705,60 € / kk<br>     <a href='https://asunnot.oikotie.fi/myytavat-asunnot/kirkkonummi/22775330' target='_blank'>View Listing</a>     </div>`)[0];
+                popup_f449c004965fc6d61007a3c5301b71c1.setContent(html_7d031abb0e27971d77de3d7081c5348b);
+            
+        
+
+        marker_14065416c43a82940dd7233b799eedb4.bindPopup(popup_f449c004965fc6d61007a3c5301b71c1)
+        ;
+
+        
+    
+    
+            marker_14065416c43a82940dd7233b799eedb4.bindTooltip(
+                `<div>
+                     
+    <b>Kirsikkatie 24, 02450, Kirkkonummi</b><br>
+    <b>Price:</b> €565000<br>
+    <b>Size:</b> 147 m²<br>
+    <b>Year:</b> 2005
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_9293ce9b442f1bcc8f8fdaa1f609dd3c = L.marker(
                 [60.183192, 24.759198],
                 {
 }
-            ).addTo(map_99723e292e854bf1e04d2551c8a478da);
+            ).addTo(map_236ab17523e2485cbbb60cd0fa2cb111);
         
     
-            var beautify_icon_1a0313abde2ec349d1add330847f91ce = new L.BeautifyIcon.icon(
+            var beautify_icon_000063ebfd95cbe6b9b6b8934ed4bcbb = new L.BeautifyIcon.icon(
                 {
+  "icon": NaN,
   "iconShape": "marker",
-  "borderWidth": 5,
-  "borderColor": "#0000FF",
-  "textColor": "white",
+  "borderWidth": 3,
+  "borderColor": "#black",
+  "textColor": "#000",
   "backgroundColor": "white",
   "innerIconStyle": "",
   "spin": false,
   "isAlphaNumericIcon": false,
 }
             )
-            marker_ece5d5ef50d9048f2413372d00410660.setIcon(beautify_icon_1a0313abde2ec349d1add330847f91ce);
+            marker_9293ce9b442f1bcc8f8fdaa1f609dd3c.setIcon(beautify_icon_000063ebfd95cbe6b9b6b8934ed4bcbb);
         
     
-        var popup_a80c7681565e5c6a83d2c7455b820821 = L.popup({
+        var popup_2e8a5d8ca45d79f031a16ef4ba9ad954 = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_1c365227f7d9eea03683520d885bbed9 = $(`<div id="html_1c365227f7d9eea03683520d885bbed9" style="width: 100.0%; height: 100.0%;">         <b>Juhannustie 6, 02200, Espoo</b><br>         <b>City:</b> Espoo<br>         <b>Neighborhood:</b> Mankkaa<br>         <b>Postal Code:</b> 02200<br>         <b>Price:</b> €629000<br>         <b>Size:</b> 179.0 m²<br>         <b>Condition:</b> Tyydyttävä<br>         <b>Bedrooms:</b> 5<br>         <b>Maintenance charge:</b> 275 € / kk<br>         <b>Capital charge:</b> N/A<br>         <b>Special charge:</b> N/A<br>         <b>Total company charge:</b> 275 € / kk<br>         <a href='https://asunnot.oikotie.fi/myytavat-asunnot/espoo/22782661' target='_blank'>View Listing</a>         </div>`)[0];
-                popup_a80c7681565e5c6a83d2c7455b820821.setContent(html_1c365227f7d9eea03683520d885bbed9);
+                var html_807e64aaea28d99dfd22e6fd66b3f336 = $(`<div id="html_807e64aaea28d99dfd22e6fd66b3f336" style="width: 100.0%; height: 100.0%;">     <b>Juhannustie 6, 02200, Espoo</b><br>     <b>City:</b> Espoo<br>     <b>Neighborhood:</b> Mankkaa<br>     <b>Postal Code:</b> 02200<br>     <b>Price:</b> €629000<br>     <b>Size:</b> 179.0 m²<br>     <b>Construction Year:</b> 1990<br>     <b>Condition:</b> Tyydyttävä<br>     <b>Bedrooms:</b> 5<br>     <b>Maintenance charge:</b> 275 € / kk<br>     <b>Capital charge:</b> nan<br>     <b>Special charge:</b> nan<br>     <b>Total company charge:</b> 275 € / kk<br>     <a href='https://asunnot.oikotie.fi/myytavat-asunnot/espoo/22782661' target='_blank'>View Listing</a>     </div>`)[0];
+                popup_2e8a5d8ca45d79f031a16ef4ba9ad954.setContent(html_807e64aaea28d99dfd22e6fd66b3f336);
             
         
 
-        marker_ece5d5ef50d9048f2413372d00410660.bindPopup(popup_a80c7681565e5c6a83d2c7455b820821)
+        marker_9293ce9b442f1bcc8f8fdaa1f609dd3c.bindPopup(popup_2e8a5d8ca45d79f031a16ef4ba9ad954)
         ;
 
         
     
+    
+            marker_9293ce9b442f1bcc8f8fdaa1f609dd3c.bindTooltip(
+                `<div>
+                     
+    <b>Juhannustie 6, 02200, Espoo</b><br>
+    <b>Price:</b> €629000<br>
+    <b>Size:</b> 179.0 m²<br>
+    <b>Year:</b> 1990
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_41e743b1a6f390dbd973b6e4dcf0629e = L.marker(
+                [60.150711, 24.735971],
+                {
+}
+            ).addTo(map_236ab17523e2485cbbb60cd0fa2cb111);
+        
+    
+            var beautify_icon_7f1347a814e8e78d77c4a19406accd2f = new L.BeautifyIcon.icon(
+                {
+  "icon": NaN,
+  "iconShape": "marker",
+  "borderWidth": 3,
+  "borderColor": "#black",
+  "textColor": "#000",
+  "backgroundColor": "white",
+  "innerIconStyle": "",
+  "spin": false,
+  "isAlphaNumericIcon": false,
+}
+            )
+            marker_41e743b1a6f390dbd973b6e4dcf0629e.setIcon(beautify_icon_7f1347a814e8e78d77c4a19406accd2f);
+        
+    
+        var popup_9ef4657e322770bc8c811c212eb0b2c9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1907eb2107d8ed886ac575459b1cf34a = $(`<div id="html_1907eb2107d8ed886ac575459b1cf34a" style="width: 100.0%; height: 100.0%;">     <b>Katiskakuja 2, 02230, Espoo</b><br>     <b>City:</b> Espoo<br>     <b>Neighborhood:</b> Nuottaniemi, Matinkylä, Nuottalahti, Nuottaniemi<br>     <b>Postal Code:</b> 02230<br>     <b>Price:</b> €648000<br>     <b>Size:</b> 126.0 m²<br>     <b>Construction Year:</b> 1998<br>     <b>Condition:</b> Hyvä<br>     <b>Bedrooms:</b> 4<br>     <b>Maintenance charge:</b> 693 € / kk<br>     <b>Capital charge:</b> 31,50 € / kk<br>     <b>Special charge:</b> nan<br>     <b>Total company charge:</b> 724,50 € / kk<br>     <a href='https://asunnot.oikotie.fi/myytavat-asunnot/espoo/21407273' target='_blank'>View Listing</a>     </div>`)[0];
+                popup_9ef4657e322770bc8c811c212eb0b2c9.setContent(html_1907eb2107d8ed886ac575459b1cf34a);
+            
+        
+
+        marker_41e743b1a6f390dbd973b6e4dcf0629e.bindPopup(popup_9ef4657e322770bc8c811c212eb0b2c9)
+        ;
+
+        
+    
+    
+            marker_41e743b1a6f390dbd973b6e4dcf0629e.bindTooltip(
+                `<div>
+                     
+    <b>Katiskakuja 2, 02230, Espoo</b><br>
+    <b>Price:</b> €648000<br>
+    <b>Size:</b> 126.0 m²<br>
+    <b>Year:</b> 1998
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_16b45d44d19fd057cf40584b1a9045ea = L.marker(
+                [60.150946, 24.733954],
+                {
+}
+            ).addTo(map_236ab17523e2485cbbb60cd0fa2cb111);
+        
+    
+            var beautify_icon_1b9b04485e764373b55196564b571653 = new L.BeautifyIcon.icon(
+                {
+  "icon": NaN,
+  "iconShape": "marker",
+  "borderWidth": 3,
+  "borderColor": "#black",
+  "textColor": "#000",
+  "backgroundColor": "white",
+  "innerIconStyle": "",
+  "spin": false,
+  "isAlphaNumericIcon": false,
+}
+            )
+            marker_16b45d44d19fd057cf40584b1a9045ea.setIcon(beautify_icon_1b9b04485e764373b55196564b571653);
+        
+    
+        var popup_3836252ab8260a91c71530593aaea7a6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f2e8efff081a67de7b012560090663c7 = $(`<div id="html_f2e8efff081a67de7b012560090663c7" style="width: 100.0%; height: 100.0%;">     <b>Nuottalahti 2, 02230, Espoo</b><br>     <b>City:</b> Espoo<br>     <b>Neighborhood:</b> Nuottalahti, Matinkylä, Nuottalahti, Nuottaniemi<br>     <b>Postal Code:</b> 02230<br>     <b>Price:</b> €628000<br>     <b>Size:</b> 119.5 m²<br>     <b>Construction Year:</b> 2000<br>     <b>Condition:</b> Hyvä<br>     <b>Bedrooms:</b> 5<br>     <b>Maintenance charge:</b> 489,95 € / kk<br>     <b>Capital charge:</b> 380,01 € / kk<br>     <b>Special charge:</b> 101,58 € / kk<br>     <b>Total company charge:</b> 971,54 € / kk<br>     <a href='https://asunnot.oikotie.fi/myytavat-asunnot/espoo/21943149' target='_blank'>View Listing</a>     </div>`)[0];
+                popup_3836252ab8260a91c71530593aaea7a6.setContent(html_f2e8efff081a67de7b012560090663c7);
+            
+        
+
+        marker_16b45d44d19fd057cf40584b1a9045ea.bindPopup(popup_3836252ab8260a91c71530593aaea7a6)
+        ;
+
+        
+    
+    
+            marker_16b45d44d19fd057cf40584b1a9045ea.bindTooltip(
+                `<div>
+                     
+    <b>Nuottalahti 2, 02230, Espoo</b><br>
+    <b>Price:</b> €628000<br>
+    <b>Size:</b> 119.5 m²<br>
+    <b>Year:</b> 2000
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_282df10b13099ff5d4c5ea406f90e70d = L.marker(
+                [60.158618, 24.549248],
+                {
+}
+            ).addTo(map_236ab17523e2485cbbb60cd0fa2cb111);
+        
+    
+            var beautify_icon_22e201c3cbf4b4d06a2220a5862f9fc3 = new L.BeautifyIcon.icon(
+                {
+  "icon": NaN,
+  "iconShape": "marker",
+  "borderWidth": 3,
+  "borderColor": "#black",
+  "textColor": "#000",
+  "backgroundColor": "white",
+  "innerIconStyle": "",
+  "spin": false,
+  "isAlphaNumericIcon": false,
+}
+            )
+            marker_282df10b13099ff5d4c5ea406f90e70d.setIcon(beautify_icon_22e201c3cbf4b4d06a2220a5862f9fc3);
+        
+    
+        var popup_b680793978fd2d7a63a4525694ff1d02 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a8d7b233b71f869c5e36c11e2ed6b71d = $(`<div id="html_a8d7b233b71f869c5e36c11e2ed6b71d" style="width: 100.0%; height: 100.0%;">     <b>Kirsikkatie 24, 02450, Kirkkonummi</b><br>     <b>City:</b> Kirkkonummi<br>     <b>Neighborhood:</b> Sundsberg<br>     <b>Postal Code:</b> 02450<br>     <b>Price:</b> €565000<br>     <b>Size:</b> 147 m²<br>     <b>Construction Year:</b> 2005<br>     <b>Condition:</b> Hyvä<br>     <b>Bedrooms:</b> 6<br>     <b>Maintenance charge:</b> 705,60 € / kk<br>     <b>Capital charge:</b> nan<br>     <b>Special charge:</b> nan<br>     <b>Total company charge:</b> 705,60 € / kk<br>     <a href='https://asunnot.oikotie.fi/myytavat-asunnot/kirkkonummi/22775330' target='_blank'>View Listing</a>     </div>`)[0];
+                popup_b680793978fd2d7a63a4525694ff1d02.setContent(html_a8d7b233b71f869c5e36c11e2ed6b71d);
+            
+        
+
+        marker_282df10b13099ff5d4c5ea406f90e70d.bindPopup(popup_b680793978fd2d7a63a4525694ff1d02)
+        ;
+
+        
+    
+    
+            marker_282df10b13099ff5d4c5ea406f90e70d.bindTooltip(
+                `<div>
+                     
+    <b>Kirsikkatie 24, 02450, Kirkkonummi</b><br>
+    <b>Price:</b> €565000<br>
+    <b>Size:</b> 147 m²<br>
+    <b>Year:</b> 2005
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_ac93c16a1b51387c790a88008cce86fc = L.marker(
+                [60.326715, 24.854068],
+                {
+}
+            ).addTo(map_236ab17523e2485cbbb60cd0fa2cb111);
+        
+    
+            var beautify_icon_ddc8a2fd27be4e9223b2a9f1144277cb = new L.BeautifyIcon.icon(
+                {
+  "icon": NaN,
+  "iconShape": "marker",
+  "borderWidth": 3,
+  "borderColor": "#black",
+  "textColor": "#000",
+  "backgroundColor": "white",
+  "innerIconStyle": "",
+  "spin": false,
+  "isAlphaNumericIcon": false,
+}
+            )
+            marker_ac93c16a1b51387c790a88008cce86fc.setIcon(beautify_icon_ddc8a2fd27be4e9223b2a9f1144277cb);
+        
+    
+        var popup_52dad61113f05310a35b4a2310955dd0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_836487e0bc9c978e819ce8f17188aadb = $(`<div id="html_836487e0bc9c978e819ce8f17188aadb" style="width: 100.0%; height: 100.0%;">     <b>Ritaritie 11, 01700, Vantaa</b><br>     <b>City:</b> Vantaa<br>     <b>Neighborhood:</b> Kivistö<br>     <b>Postal Code:</b> 01700<br>     <b>Price:</b> €565000<br>     <b>Size:</b> 153.0 m²<br>     <b>Construction Year:</b> 2004<br>     <b>Condition:</b> Hyvä<br>     <b>Bedrooms:</b> 4<br>     <b>Maintenance charge:</b> nan<br>     <b>Capital charge:</b> nan<br>     <b>Special charge:</b> nan<br>     <b>Total company charge:</b> nan<br>     <a href='https://asunnot.oikotie.fi/myytavat-asunnot/vantaa/22782982' target='_blank'>View Listing</a>     </div>`)[0];
+                popup_52dad61113f05310a35b4a2310955dd0.setContent(html_836487e0bc9c978e819ce8f17188aadb);
+            
+        
+
+        marker_ac93c16a1b51387c790a88008cce86fc.bindPopup(popup_52dad61113f05310a35b4a2310955dd0)
+        ;
+
+        
+    
+    
+            marker_ac93c16a1b51387c790a88008cce86fc.bindTooltip(
+                `<div>
+                     
+    <b>Ritaritie 11, 01700, Vantaa</b><br>
+    <b>Price:</b> €565000<br>
+    <b>Size:</b> 153.0 m²<br>
+    <b>Year:</b> 2004
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
 </script>
 </html>
